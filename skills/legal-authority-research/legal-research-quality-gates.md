@@ -9,11 +9,13 @@ Run these checks before claiming a research packet is complete.
 - No confirmed legal proposition unless authority level is classified.
 - No confirmed legal proposition unless pinpoint support is recorded.
 - No confirmed legal proposition unless currentness status is recorded.
+- Currentness not verified means counsel-review-required, not supported.
+- No external search unless confidential facts are absent or the packet records user authorization and a sanitized query.
 - No final legal advice.
 - No safe-to-sign conclusion.
 - No hidden source-access limitation.
 - No market-practice evidence treated as legal authority.
-- No confidential facts sent to external search without authorization.
+- No confidential facts sent to external search without recorded authorization and sanitized query.
 
 ## Stop Conditions
 
@@ -23,6 +25,7 @@ Stop and disclose the gap when:
 - Source access cannot verify currentness.
 - The source cannot be opened or inspected.
 - A citation exists but does not support the proposition.
+- The authority is unpublished, non-precedential, withdrawn, vacated, or citation-restricted and no jurisdiction rule permits reliance.
 - The issue turns on facts not provided.
 - Legal judgment is required before relying on the result.
 

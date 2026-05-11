@@ -28,9 +28,11 @@ No final output may contain a confirmed legal proposition that is absent from th
 
 ## Status Rules
 
-- supported: authority directly supports the proposition in the target jurisdiction.
+- supported: authority directly supports the proposition in the target jurisdiction and currentness is verified.
 - refuted: authority directly contradicts the proposition.
 - mixed: authority conflicts or turns on unresolved facts.
 - unverified: source exists but support, currentness, or jurisdiction is not confirmed.
 - jurisdiction-dependent: result changes by governing law, forum, or regime.
 - counsel-review-required: legal judgment is needed before relying on the proposition.
+
+Currentness not citator-verified cannot be marked supported. Use unverified or counsel-review-required instead, even if the citation exists and the source text appears helpful.

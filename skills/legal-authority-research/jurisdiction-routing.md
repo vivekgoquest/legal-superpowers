@@ -21,6 +21,18 @@ jurisdiction:
 
 Do not collapse mixed jurisdictions into one answer. Do not infer governing law from style, address, currency, court venue boilerplate, or party nationality without saying it is an assumption.
 
+## Conflicts And Mandatory Law
+
+Separate these lanes when they differ:
+
+- Substantive governing law.
+- Forum and procedural law.
+- Mandatory local law that may override contract choice.
+- Regulatory regime.
+- Arbitral seat and arbitral rules.
+
+If procedural law, substantive law, or mandatory local law could change the result, mark the claim jurisdiction-dependent and route it to counsel.
+
 ## Required Output
 
 Every research packet must include:

@@ -222,6 +222,8 @@ If jurisdiction is unknown, the skill may do comparative or hypothetical researc
 
 If jurisdictions are mixed, the skill must split the research lanes rather than collapse them.
 
+The jurisdiction record must separate substantive governing law, forum and procedural law, regulatory regime, arbitral seat, arbitral rules, and mandatory local law that may override contract choice. If procedural law, substantive law, or mandatory local law could change the result, the relevant claim is jurisdiction-dependent and counsel-review-required.
+
 ### 4. Authority Hierarchy Map
 
 Before relying on any source, define the authority hierarchy for the jurisdiction.
@@ -280,6 +282,8 @@ Every retrieved source must be checked before it enters the claim ledger:
 - What jurisdiction does it belong to?
 - What authority level does it have?
 - Is it current, outdated, overruled, superseded, amended, or not citator-verified?
+- For case law, is it published, unpublished or non-precedential, withdrawn, vacated, or citation-restricted?
+- For statutes and regulations, do retroactivity, transition provisions, grandfathering, or effective dates affect the proposition?
 - Does the pinpoint text support the proposition?
 - Is the proposition broader than the source supports?
 - Does the source depend on facts unlike the user's document?
@@ -315,6 +319,8 @@ counsel_questions:
 ```
 
 No final output may contain a confirmed legal proposition that is absent from the ledger.
+
+Currentness not citator-verified cannot be marked supported. Use unverified or counsel-review-required instead, even if the citation exists and the source text appears helpful.
 
 ### 9. Clause Comparison Research
 
@@ -376,6 +382,7 @@ The output must include:
 - Jurisdiction record.
 - Authority hierarchy map.
 - Source strategy and source-access limits.
+- Source ledger with access timestamp, retrieval query, provenance, source version, confidentiality status, and whether any external query was sanitized.
 - Clause or issue map.
 - Claim/evidence ledger summary.
 - Verified propositions.
@@ -388,6 +395,8 @@ The output must include:
 - Attorney-review handoff.
 
 The output must preserve source limitations even when the user wants a simple answer.
+
+External search using sensitive matter facts requires recorded user authorization and a sanitized query whenever possible. If the query cannot be sanitized without losing the research issue, the packet must disclose the risk and prefer local-only issue mapping.
 
 ## Data Artifacts
 

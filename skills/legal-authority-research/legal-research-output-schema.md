@@ -30,6 +30,14 @@ Use this packet shape unless the user requests a narrower artifact.
 - Unverified propositions.
 - Counsel-review-required propositions.
 
+## Source Ledger
+
+- Source IDs used in the packet.
+- Access timestamp, URL, database, or supplied-document provenance.
+- Retrieval query or local source path.
+- Source version, effective date, or accessed date.
+- Confidentiality status and whether external search used sanitized facts.
+
 ## Analysis
 
 - Lawyer-facing analysis.

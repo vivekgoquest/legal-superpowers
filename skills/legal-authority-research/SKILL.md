@@ -106,6 +106,7 @@ Produce a research packet with:
 - Jurisdiction record.
 - Authority hierarchy map.
 - Source strategy and source-access limits.
+- Source ledger with provenance for every relied-on source.
 - Clause or issue map.
 - Claim/evidence ledger.
 - Verified, refuted, mixed, and unverified propositions.
@@ -134,6 +135,7 @@ See `legal-research-output-schema.md`.
 - `jurisdiction-routing.md` defines jurisdiction records and routing.
 - `authority-hierarchy.md` defines source classification.
 - `source-strategy.md` defines source-access lanes and limits.
+- `source-ledger.md` defines source provenance, retrieval metadata, and confidentiality tracking.
 - `precedent-research.md` defines case-law and contrary-authority handling.
 - `statutory-regulatory-research.md` defines statute/regulation handling.
 - `clause-comparison-research.md` defines clause and market-practice separation.

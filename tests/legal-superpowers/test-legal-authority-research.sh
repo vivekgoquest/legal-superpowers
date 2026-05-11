@@ -75,7 +75,21 @@ run_skill_checks() {
   assert_contains "$skill" "citation-verification.md"
   assert_contains "$skill" "legal-research-output-schema.md"
   assert_contains "$skill" "legal-research-quality-gates.md"
+  assert_contains "$skill" "source-ledger.md"
   pass "legal-authority-research skill checks"
+}
+
+run_spec_checks() {
+  local spec="docs/legal-superpowers/specs/2026-05-11-legal-authority-research-design.md"
+  assert_file "$spec"
+  assert_contains "$spec" "source-ledger.md"
+  assert_contains "$spec" "not citator-verified cannot be marked supported"
+  assert_contains "$spec" "mandatory local law"
+  assert_contains "$spec" "procedural law"
+  assert_contains "$spec" "unpublished or non-precedential"
+  assert_contains "$spec" "retroactivity"
+  assert_contains "$spec" "sanitized query"
+  pass "legal-authority-research spec checks"
 }
 
 run_reference_checks() {
@@ -90,21 +104,32 @@ run_reference_checks() {
   assert_file "$base/citation-verification.md"
   assert_file "$base/legal-research-output-schema.md"
   assert_file "$base/legal-research-quality-gates.md"
+  assert_file "$base/source-ledger.md"
 
   assert_contains "$base/jurisdiction-routing.md" "confirmed | assumed | unknown | mixed"
   assert_contains "$base/jurisdiction-routing.md" "split the research lanes"
+  assert_contains "$base/jurisdiction-routing.md" "mandatory local law"
+  assert_contains "$base/jurisdiction-routing.md" "procedural law"
   assert_contains "$base/authority-hierarchy.md" "Binding primary authority"
   assert_contains "$base/authority-hierarchy.md" "Market practice and sample documents"
   assert_contains "$base/source-strategy.md" "CourtListener"
   assert_contains "$base/source-strategy.md" "Eyecite"
   assert_contains "$base/source-strategy.md" "No approved source strategy exists"
   assert_contains "$base/precedent-research.md" "contrary authority"
+  assert_contains "$base/precedent-research.md" "unpublished or non-precedential"
   assert_contains "$base/statutory-regulatory-research.md" "amendments"
+  assert_contains "$base/statutory-regulatory-research.md" "retroactivity"
   assert_contains "$base/clause-comparison-research.md" "market practice is not legal authority"
   assert_contains "$base/claim-evidence-ledger.md" "No final output may contain a confirmed legal proposition"
+  assert_contains "$base/claim-evidence-ledger.md" "not citator-verified cannot be marked supported"
   assert_contains "$base/citation-verification.md" "Citation existence does not prove proposition support"
+  assert_contains "$base/source-ledger.md" "access timestamp"
+  assert_contains "$base/source-ledger.md" "retrieval query"
+  assert_contains "$base/source-ledger.md" "confidentiality status"
   assert_contains "$base/legal-research-output-schema.md" "Jurisdiction Record"
   assert_contains "$base/legal-research-quality-gates.md" "No confirmed legal proposition unless"
+  assert_contains "$base/legal-research-quality-gates.md" "Currentness not verified means counsel-review-required"
+  assert_contains "$base/legal-research-quality-gates.md" "recorded authorization and sanitized query"
   pass "legal-authority-research reference checks"
 }
 
@@ -117,12 +142,17 @@ run_pressure_checks() {
   assert_contains "$dir/unopened-citations.prompt.txt" "Use these citations"
   assert_contains "$dir/confidential-search.prompt.txt" "search the exact party names"
   assert_contains "$dir/safe-to-sign.prompt.txt" "safe to sign"
+  assert_contains "$dir/public-source-currentness.prompt.txt" "CourtListener found it"
+  assert_contains "$dir/unpublished-case.prompt.txt" "unpublished"
   pass "legal-authority-research pressure prompt checks"
 }
 
 case "$MODE" in
   skill)
     run_skill_checks
+    ;;
+  spec)
+    run_spec_checks
     ;;
   references)
     run_reference_checks
@@ -133,6 +163,7 @@ case "$MODE" in
   all)
     assert_executable "tests/legal-superpowers/test-legal-authority-research.sh"
     run_skill_checks
+    run_spec_checks
     run_reference_checks
     run_pressure_checks
     ;;
