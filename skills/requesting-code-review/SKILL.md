@@ -20,6 +20,7 @@ Dispatch a code reviewer subagent to catch issues before they cascade. The revie
 - When stuck (fresh perspective)
 - Before refactoring (baseline check)
 - After fixing complex bug
+- When you need a strategy-confidence-loop over architecture, sequencing, risk, or implementation strategy
 
 ## How to Request
 
@@ -101,3 +102,13 @@ You: [Fix progress indicators]
 - Request clarification
 
 See template at: requesting-code-review/code-reviewer.md
+
+## Strategy Confidence Phrase
+
+If the user asks this, include it in the reviewer context and ask the reviewer to run the `strategy-confidence-loop` rather than only checking the diff:
+
+```text
+Are you 100% confident in this strategy? If not, find all possible loopholes,
+  suggest proper fixes and run this loop until you are factually 100% confident
+  in the  startegy
+```

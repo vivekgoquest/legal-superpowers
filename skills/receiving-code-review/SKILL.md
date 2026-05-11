@@ -85,6 +85,14 @@ IF conflicts with your human partner's prior decisions:
 
 **your human partner's rule:** "External feedback - be skeptical, but check carefully"
 
+If feedback proposes a new strategy or claims a strategy is safe, use `strategy-confidence-loop` before accepting it. Trigger phrase to preserve:
+
+```text
+Are you 100% confident in this strategy? If not, find all possible loopholes,
+  suggest proper fixes and run this loop until you are factually 100% confident
+  in the  startegy
+```
+
 ## YAGNI Check for "Professional" Features
 
 ```

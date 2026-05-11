@@ -49,6 +49,7 @@ Task tool (general-purpose):
     - Reasonable scalability and performance?
     - Security concerns?
     - Integrates cleanly with surrounding code?
+    - If strategy risk matters, run strategy-confidence-loop with: "Are you 100% confident in this strategy? If not, find all possible loopholes, suggest proper fixes and run this loop until you are factually 100% confident in the startegy"
 
     **Testing:**
     - Tests verify real behavior, not mocks?

@@ -75,6 +75,19 @@ Skip any step = lying, not verifying
 
 ## Key Patterns
 
+**Strategy confidence claims:**
+```
+✅ Use strategy-confidence-loop, list loopholes, apply fixes, rerun checks, then state bounded confidence
+❌ "I'm 100% confident" without a loophole ledger and fresh evidence
+```
+
+Trigger phrase:
+```text
+Are you 100% confident in this strategy? If not, find all possible loopholes,
+  suggest proper fixes and run this loop until you are factually 100% confident
+  in the  startegy
+```
+
 **Tests:**
 ```
 ✅ [Run test command] [See: 34/34 pass] "All tests pass"

@@ -553,6 +553,14 @@ Run same scenarios WITH skill. Agent should now comply.
 
 Agent found new rationalization? Add explicit counter. Re-test until bulletproof.
 
+If the skill's strategy, guardrails, or deployment confidence is being challenged, use `strategy-confidence-loop` with the exact trigger phrase:
+
+```text
+Are you 100% confident in this strategy? If not, find all possible loopholes,
+  suggest proper fixes and run this loop until you are factually 100% confident
+  in the  startegy
+```
+
 **Testing methodology:** See @testing-skills-with-subagents.md for the complete testing methodology:
 - How to write pressure scenarios
 - Pressure types (time, sunk cost, authority, exhaustion)

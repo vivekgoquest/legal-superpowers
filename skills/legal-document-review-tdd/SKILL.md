@@ -84,6 +84,16 @@ Always include an attorney-review handoff. It must identify issues counsel shoul
 
 Before claiming completion, check the output against the expected review tests. If a test is unmet, fix the work product or disclose the gap. Do not claim the review is complete while known tests are unmet.
 
+If the user asks for confidence in a legal-document strategy, apply `strategy-confidence-loop` and preserve this exact prompt:
+
+```text
+Are you 100% confident in this strategy? If not, find all possible loopholes,
+  suggest proper fixes and run this loop until you are factually 100% confident
+  in the  startegy
+```
+
+For legal work, factually confident means the review packet has exhausted known source-grounded checks inside the stated scope. It never means final legal advice or safe-to-sign certainty.
+
 ## Required References
 
 - `legal-output-schema.md` defines the required work-product sections.

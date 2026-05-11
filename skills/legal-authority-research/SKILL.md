@@ -130,6 +130,18 @@ See `legal-research-output-schema.md`.
 - No hiding source-access, citator, or currentness limits.
 - No external search with confidential facts unless authorized.
 
+## Strategy Confidence Loop
+
+If the user asks for confidence in the legal research strategy, use `strategy-confidence-loop` and preserve this exact prompt:
+
+```text
+Are you 100% confident in this strategy? If not, find all possible loopholes,
+  suggest proper fixes and run this loop until you are factually 100% confident
+  in the  startegy
+```
+
+For legal authority research, factually confident means every known in-scope proposition has a jurisdiction record, authority map, source ledger entry, pinpoint support check, currentness status, contrary-authority check, and counsel-review boundary. It does not mean final legal advice.
+
 ## Required References
 
 - `jurisdiction-routing.md` defines jurisdiction records and routing.

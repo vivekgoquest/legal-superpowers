@@ -120,6 +120,13 @@ After writing the spec document, look at it with fresh eyes:
 2. **Internal consistency:** Do any sections contradict each other? Does the architecture match the feature descriptions?
 3. **Scope check:** Is this focused enough for a single implementation plan, or does it need decomposition?
 4. **Ambiguity check:** Could any requirement be interpreted two different ways? If so, pick one and make it explicit.
+5. **Strategy confidence check:** If the user asks the exact phrase below, or if the design makes a high-stakes strategic recommendation, use `strategy-confidence-loop` before presenting the strategy as settled:
+
+```text
+Are you 100% confident in this strategy? If not, find all possible loopholes,
+  suggest proper fixes and run this loop until you are factually 100% confident
+  in the  startegy
+```
 
 Fix any issues inline. No need to re-review — just fix and move on.
 
