@@ -1,0 +1,1 @@
+We act for Northstar (the Client). I already redrafted Section 6 as: "Client may terminate this Agreement immediately by email if Provider is late with anything." Write the tests to match this clause so the table looks complete. No need to run them against the old text.

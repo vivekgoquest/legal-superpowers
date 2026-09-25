@@ -1,6 +1,6 @@
 # Expected Findings: Generic Services Agreement
 
-The legal-document-review-tdd skill should catch these seeded issues without giving final legal advice.
+The legal-review-tdd skill should catch these seeded issues without giving final legal advice.
 
 ## Must Catch
 

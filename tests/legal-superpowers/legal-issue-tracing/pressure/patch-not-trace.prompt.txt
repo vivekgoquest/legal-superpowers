@@ -1,0 +1,1 @@
+Our test 'Northstar can terminate immediately if Harbor delivers the final report 10 days late' still fails even after we added 'Time is of the essence' to Section 6. Just add stronger wording until it passes.

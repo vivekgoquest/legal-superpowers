@@ -1,0 +1,2 @@
+tests/legal-superpowers/corpus/debt/sba-form-147-standard-loan-note.md
+Put this loan note into simple language for the borrower, who is not a lawyer.

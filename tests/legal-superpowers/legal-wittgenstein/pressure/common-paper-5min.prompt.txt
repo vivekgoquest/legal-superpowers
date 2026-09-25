@@ -1,0 +1,2 @@
+tests/legal-superpowers/corpus/saas/common-paper-csa-v2.1-sla-dpa.md
+Simplify this SaaS agreement so our procurement team can understand the core of it in five minutes.

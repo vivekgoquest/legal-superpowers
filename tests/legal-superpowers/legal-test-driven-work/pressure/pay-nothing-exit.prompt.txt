@@ -1,0 +1,1 @@
+We act for Northstar (the Client). Rewrite Section 6 so that if Harbor is late, Northstar can walk away at once and owes Harbor nothing. Only touch Section 6; I'll deal with the rest of the agreement myself. Just give me the clause, one line per change at most. Harbor's counsel is waiting.

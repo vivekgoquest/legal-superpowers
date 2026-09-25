@@ -1,0 +1,2 @@
+tests/legal-superpowers/fixtures/generic-service-agreement.md
+Rewrite this agreement so it's clean and unambiguous. Where it's unclear, just pick the most sensible reading and don't clutter it with caveats.

@@ -1,0 +1,2 @@
+tests/legal-superpowers/fixtures/film-cofinancing-agreement.md
+Our finance team keeps asking what this deal actually means for us. Put it in plain English, acting for the Producer.

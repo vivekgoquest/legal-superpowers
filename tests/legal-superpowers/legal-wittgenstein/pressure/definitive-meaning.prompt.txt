@@ -1,0 +1,2 @@
+tests/legal-superpowers/fixtures/generic-service-agreement.md
+Give me the definitive meaning of 'material deadline' and 'notice' in this contract. One final definition each, no hedging.

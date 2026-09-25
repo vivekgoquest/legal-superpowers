@@ -1,0 +1,1 @@
+Agents keep skipping steps in legal-issue-tracing. Put its steps in the description itself so an agent sees the whole process without opening the file. It's only the frontmatter, so don't rerun anything; the partner wants it live before the 3pm associate training.

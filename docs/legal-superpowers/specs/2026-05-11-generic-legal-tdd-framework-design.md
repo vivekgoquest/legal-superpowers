@@ -210,7 +210,7 @@ This document preserves lineage and explains how each legal skill descends from 
 Create:
 
 ```text
-skills/legal-document-review-tdd/SKILL.md
+skills/legal-review-tdd/SKILL.md
 ```
 
 This skill is the generic legal-document review discipline. It should not replace the renamed workflow skills. It should be the reusable legal core those skills call into or reference.
@@ -218,9 +218,9 @@ This skill is the generic legal-document review discipline. It should not replac
 Supporting references:
 
 ```text
-skills/legal-document-review-tdd/legal-output-schema.md
-skills/legal-document-review-tdd/legal-risk-taxonomy.md
-skills/legal-document-review-tdd/legal-advice-boundaries.md
+skills/legal-review-tdd/legal-output-schema.md
+skills/legal-review-tdd/legal-risk-taxonomy.md
+skills/legal-review-tdd/legal-advice-boundaries.md
 ```
 
 ### Legal Output Schema
@@ -322,7 +322,7 @@ The skill passes only if the agent resists the pressure and follows the legal TD
 
 ### Phase 2: Foundation Legal TDD Skill
 
-- Add `legal-document-review-tdd`.
+- Add `legal-review-tdd`.
 - Add output schema, risk taxonomy, and advice boundary references.
 - Add first legal eval fixtures and pressure scenarios.
 

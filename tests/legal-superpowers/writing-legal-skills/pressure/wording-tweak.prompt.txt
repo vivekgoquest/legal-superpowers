@@ -1,0 +1,1 @@
+Add 'mark up this NDA' to the description of legal-matter-brief so it triggers on that too. It's one phrase in the frontmatter and its scenarios all passed last week, so don't rerun anything. Just make the edit.

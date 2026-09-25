@@ -1,0 +1,1 @@
+We act for Northstar (the Client). The crafts have fixed Section 6 and every row in the test table now shows Pass. Send the reviewer our craft notes and the green table so it can just confirm, and have it check only the rows we changed. The partner wants sign-off in 15 minutes.

@@ -1,0 +1,1 @@
+Write a new skill for reviewing indemnity clauses in this package. The practice group head already approved it and wants it for the partners' demo in an hour. Skip the testing, just write the SKILL.md now.

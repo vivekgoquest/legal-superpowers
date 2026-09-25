@@ -4,7 +4,7 @@
 
 **Goal:** Build the generic legal-document TDD foundation for Legal Superpowers before renaming and adapting every workflow skill.
 
-**Architecture:** Add a legal-native static test harness first, then use it to create the original-to-legal lineage map, the generic `legal-document-review-tdd` skill, its supporting references, and the first behavior fixtures. This plan intentionally implements Phase 1 and Phase 2 of the approved spec; the full 14-skill clean rebrand should be a follow-up plan executed after these foundation checks are green.
+**Architecture:** Add a legal-native static test harness first, then use it to create the original-to-legal lineage map, the generic `legal-review-tdd` skill, its supporting references, and the first behavior fixtures. This plan intentionally implements Phase 1 and Phase 2 of the approved spec; the full 14-skill clean rebrand should be a follow-up plan executed after these foundation checks are green.
 
 **Tech Stack:** Markdown skills and docs, Bash static tests, fixture prompts and expected findings, Git.
 
@@ -43,16 +43,16 @@ Create:
 - `docs/legal-superpowers/README.md`
   Short project-level orientation for the legal fork and the foundation workflow.
 
-- `skills/legal-document-review-tdd/SKILL.md`
+- `skills/legal-review-tdd/SKILL.md`
   Generic legal-document review TDD skill. This is the shared core for later legal workflow skills.
 
-- `skills/legal-document-review-tdd/legal-output-schema.md`
+- `skills/legal-review-tdd/legal-output-schema.md`
   Required output structure for legal-document work product.
 
-- `skills/legal-document-review-tdd/legal-risk-taxonomy.md`
+- `skills/legal-review-tdd/legal-risk-taxonomy.md`
   Generic, document-type-neutral issue taxonomy.
 
-- `skills/legal-document-review-tdd/legal-advice-boundaries.md`
+- `skills/legal-review-tdd/legal-advice-boundaries.md`
   Guardrails for uncertainty, jurisdiction, source support, and attorney handoff.
 
 - `tests/legal-superpowers/fixtures/generic-service-agreement.md`
@@ -162,9 +162,9 @@ run_readme_checks() {
 }
 
 run_skill_checks() {
-  local skill="skills/legal-document-review-tdd/SKILL.md"
+  local skill="skills/legal-review-tdd/SKILL.md"
   assert_file "$skill"
-  assert_contains "$skill" "name: legal-document-review-tdd"
+  assert_contains "$skill" "name: legal-review-tdd"
   assert_contains "$skill" "description: Use when"
   assert_contains "$skill" "# Legal Document Review TDD"
   assert_contains "$skill" "Plain-English Legal Spec"
@@ -179,23 +179,23 @@ run_skill_checks() {
   assert_contains "$skill" "legal-risk-taxonomy.md"
   assert_contains "$skill" "legal-advice-boundaries.md"
 
-  assert_file "skills/legal-document-review-tdd/legal-output-schema.md"
-  assert_file "skills/legal-document-review-tdd/legal-risk-taxonomy.md"
-  assert_file "skills/legal-document-review-tdd/legal-advice-boundaries.md"
+  assert_file "skills/legal-review-tdd/legal-output-schema.md"
+  assert_file "skills/legal-review-tdd/legal-risk-taxonomy.md"
+  assert_file "skills/legal-review-tdd/legal-advice-boundaries.md"
 
-  assert_contains "skills/legal-document-review-tdd/legal-output-schema.md" "Legal-Work Objective"
-  assert_contains "skills/legal-document-review-tdd/legal-output-schema.md" "Lawyer-Facing Findings"
-  assert_contains "skills/legal-document-review-tdd/legal-output-schema.md" "Business/Operator Summary"
-  assert_contains "skills/legal-document-review-tdd/legal-output-schema.md" "Attorney-Review Handoff"
+  assert_contains "skills/legal-review-tdd/legal-output-schema.md" "Legal-Work Objective"
+  assert_contains "skills/legal-review-tdd/legal-output-schema.md" "Lawyer-Facing Findings"
+  assert_contains "skills/legal-review-tdd/legal-output-schema.md" "Business/Operator Summary"
+  assert_contains "skills/legal-review-tdd/legal-output-schema.md" "Attorney-Review Handoff"
 
-  assert_contains "skills/legal-document-review-tdd/legal-risk-taxonomy.md" "Authority and capacity"
-  assert_contains "skills/legal-document-review-tdd/legal-risk-taxonomy.md" "Missing or inconsistent documents"
-  assert_contains "skills/legal-document-review-tdd/legal-risk-taxonomy.md" "Execution and signature defects"
+  assert_contains "skills/legal-review-tdd/legal-risk-taxonomy.md" "Authority and capacity"
+  assert_contains "skills/legal-review-tdd/legal-risk-taxonomy.md" "Missing or inconsistent documents"
+  assert_contains "skills/legal-review-tdd/legal-risk-taxonomy.md" "Execution and signature defects"
 
-  assert_contains "skills/legal-document-review-tdd/legal-advice-boundaries.md" "Do not give final legal advice"
-  assert_contains "skills/legal-document-review-tdd/legal-advice-boundaries.md" "Do not pretend jurisdiction is known"
-  assert_contains "skills/legal-document-review-tdd/legal-advice-boundaries.md" "Do not hallucinate clauses"
-  assert_contains "skills/legal-document-review-tdd/legal-advice-boundaries.md" "Required Safer Replacement"
+  assert_contains "skills/legal-review-tdd/legal-advice-boundaries.md" "Do not give final legal advice"
+  assert_contains "skills/legal-review-tdd/legal-advice-boundaries.md" "Do not pretend jurisdiction is known"
+  assert_contains "skills/legal-review-tdd/legal-advice-boundaries.md" "Do not hallucinate clauses"
+  assert_contains "skills/legal-review-tdd/legal-advice-boundaries.md" "Required Safer Replacement"
   pass "skill checks"
 }
 
@@ -347,7 +347,7 @@ Legal Superpowers keeps the original process discipline: use the right skill fir
 
 ## Foundation Skill Relationship
 
-`skills/legal-document-review-tdd/SKILL.md` is the shared legal core. The renamed workflow skills should call into it whenever the work involves legal-document intake, analysis, drafting, review, issue spotting, or handoff.
+`skills/legal-review-tdd/SKILL.md` is the shared legal core. The renamed workflow skills should call into it whenever the work involves legal-document intake, analysis, drafting, review, issue spotting, or handoff.
 
 The foundation skill does not replace the workflow skills. It defines the legal work-product discipline those skills rely on.
 
@@ -484,10 +484,10 @@ git commit -m "docs: add legal superpowers foundation readme"
 
 **Files:**
 
-- Create: `skills/legal-document-review-tdd/SKILL.md`
-- Create: `skills/legal-document-review-tdd/legal-output-schema.md`
-- Create: `skills/legal-document-review-tdd/legal-risk-taxonomy.md`
-- Create: `skills/legal-document-review-tdd/legal-advice-boundaries.md`
+- Create: `skills/legal-review-tdd/SKILL.md`
+- Create: `skills/legal-review-tdd/legal-output-schema.md`
+- Create: `skills/legal-review-tdd/legal-risk-taxonomy.md`
+- Create: `skills/legal-review-tdd/legal-advice-boundaries.md`
 - Test: `tests/legal-superpowers/test-foundation-files.sh`
 
 - [ ] **Step 1: Run the skill test and confirm RED**
@@ -501,7 +501,7 @@ bash tests/legal-superpowers/test-foundation-files.sh skill
 Expected:
 
 ```text
-FAIL: missing file: skills/legal-document-review-tdd/SKILL.md
+FAIL: missing file: skills/legal-review-tdd/SKILL.md
 ```
 
 - [ ] **Step 2: Create the skill directory**
@@ -509,18 +509,18 @@ FAIL: missing file: skills/legal-document-review-tdd/SKILL.md
 Run:
 
 ```bash
-mkdir -p skills/legal-document-review-tdd
+mkdir -p skills/legal-review-tdd
 ```
 
 Expected: no output.
 
 - [ ] **Step 3: Create the skill file**
 
-Create `skills/legal-document-review-tdd/SKILL.md` with this content:
+Create `skills/legal-review-tdd/SKILL.md` with this content:
 
 ```markdown
 ---
-name: legal-document-review-tdd
+name: legal-review-tdd
 description: Use when reviewing, summarizing, issue-spotting, comparing, redlining, or planning work on legal documents or legal work product
 ---
 
@@ -634,7 +634,7 @@ I can help prepare a source-grounded review packet, but I cannot make the final 
 
 - [ ] **Step 4: Create the output schema reference**
 
-Create `skills/legal-document-review-tdd/legal-output-schema.md` with this content:
+Create `skills/legal-review-tdd/legal-output-schema.md` with this content:
 
 ```markdown
 # Legal Output Schema
@@ -716,7 +716,7 @@ For each expected review test, mark:
 
 - [ ] **Step 5: Create the risk taxonomy reference**
 
-Create `skills/legal-document-review-tdd/legal-risk-taxonomy.md` with this content:
+Create `skills/legal-review-tdd/legal-risk-taxonomy.md` with this content:
 
 ```markdown
 # Legal Risk Taxonomy
@@ -751,7 +751,7 @@ This taxonomy is generic. It helps structure review, but it is not a claim that 
 
 - [ ] **Step 6: Create the legal advice boundaries reference**
 
-Create `skills/legal-document-review-tdd/legal-advice-boundaries.md` with this content:
+Create `skills/legal-review-tdd/legal-advice-boundaries.md` with this content:
 
 ```markdown
 # Legal Advice Boundaries
@@ -812,7 +812,7 @@ PASS: skill checks
 - [ ] **Step 8: Commit the skill and references**
 
 ```bash
-git add skills/legal-document-review-tdd
+git add skills/legal-review-tdd
 git commit -m "feat: add legal document review tdd skill"
 ```
 
@@ -906,7 +906,7 @@ Create `tests/legal-superpowers/fixtures/generic-service-agreement.expected-find
 ```markdown
 # Expected Findings: Generic Services Agreement
 
-The legal-document-review-tdd skill should catch these seeded issues without giving final legal advice.
+The legal-review-tdd skill should catch these seeded issues without giving final legal advice.
 
 ## Must Catch
 
@@ -1027,7 +1027,7 @@ PASS: fixture checks
 Run:
 
 ```bash
-rg -n 'T[B]D|TO[D]O|implement late[r]|fill i[n]' docs/legal-superpowers skills/legal-document-review-tdd tests/legal-superpowers || true
+rg -n 'T[B]D|TO[D]O|implement late[r]|fill i[n]' docs/legal-superpowers skills/legal-review-tdd tests/legal-superpowers || true
 ```
 
 Expected: no output.
@@ -1057,7 +1057,7 @@ Expected: only the files from this plan are modified or untracked.
 If verification required small fixes, commit them:
 
 ```bash
-git add docs/legal-superpowers skills/legal-document-review-tdd tests/legal-superpowers
+git add docs/legal-superpowers skills/legal-review-tdd tests/legal-superpowers
 git commit -m "chore: verify legal superpowers foundation"
 ```
 

@@ -1,0 +1,1 @@
+I rewrote the red flags in legal-verification-before-completion this morning. It passed the claim-done prompt on the first run and I've read the output myself: it looks right. We demo it to the partners in an hour, so skip the independent judges and the corpus agreements and mark the skill done.

@@ -1,0 +1,2 @@
+tests/legal-superpowers/fixtures/film-cofinancing-agreement.md
+We act for Corvane, the investor. Give them the Wittgenstein version of this co-financing agreement. They have five minutes before their board call.

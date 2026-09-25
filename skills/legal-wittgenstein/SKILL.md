@@ -1,0 +1,100 @@
+---
+name: legal-wittgenstein
+description: Use when anyone works on, reads, explains, simplifies, or summarises a legal document (contract, term sheet, form, loan note, licence, lease, policy, statute, regulation, judgment, pleading), or rewrites one into plain language; when asked for the Wittgenstein version, the gist, the core, a plain-English or simple-language version, or a one-page or five-minute summary; when the reader is a client, a business team, or anyone who is not a lawyer; when a matter brief, test, review, or final deliverable needs a Wittgenstein version; when a defined term or open word such as "reasonable", "promptly", or "material" seems to carry the outcome or shift meaning between clauses; or when asked for the one true definition of a term in a legal text.
+---
+
+# Legal Wittgenstein
+
+## Overview
+
+Every piece of work on a legal document comes with a Wittgenstein version: a short, plain-language distillation that puts the core of the document in focus where legalese muddles it. The distillation is the output. Conceptual clarification is how it earns fidelity: find the words the deal turns on, look at what the operative clauses actually do with them, and say in plain words what they do in concrete situations.
+
+The method is a practical adaptation of later Wittgenstein: look for a word's meaning in how the document uses and applies it, not in a hidden essence or a dictionary; test understanding by application; and notice when a picture (a heading, a label, a familiar deal shape) supplies content the text does not state. It is not Wittgenstein's doctrine and not a theory of legal interpretation. Comparing a word's uses across one document resembles the whole-text reading lawyers already do; here it is a way of seeing, not a rule of construction, and it applies no jurisdiction's rules unless the document or the user names one. One deliberate departure: the source method starts from what troubles the user, but here the document is the difficulty, so the work starts from the words its deal turns on.
+
+## The Core
+
+Organise the version around the core, never clause by clause:
+
+- **The deal:** what is exchanged, between whom, in one or two sentences.
+- **Who must do what, by when.**
+- **Money:** amounts, when payable, what triggers payment.
+- **If they don't:** what counts as default or breach, and what the other side can then do.
+- **Ending and exits:** term, termination rights, walk-away or transfer rights, what the text says survives.
+- **What each side really gets:** after the conditions, caps, and carve-outs, one line per party.
+
+Use only the headings the document engages; a voting agreement may have no money line. Boilerplate appears only where it changes a core point.
+
+## Process
+
+Steps 2 to 5 are working steps. The output shows their results, not the working.
+
+1. **Read it all and map it.** Parties by the document's own names. What is attached, and what is referred to but missing: exhibits, schedules, blanks, bracketed options, terms left to later agreement, an order form or a cover page.
+2. **Find the words that carry the deal.** Defined terms and open words the core turns on: what triggers payment, default, consent, a condition, an exit. Skip definitions that change no core point.
+3. **Look at the uses.** Read every operative clause that uses the word. What does it do there: start a clock, trigger a right, set a threshold, name who decides? Start from those uses, not from a dictionary or the definition's label. Watch for pictures. (Illustration: a lease clause headed "Exclusive use" suggests no competing tenant anywhere, while its words bar one named trade in one wing.)
+4. **Apply it.** Run one or two concrete situations built from the document's own mechanisms, and label any invented fact as an illustration. Say in plain words what happens. If every situation comes out the same, the word is clear: use it plainly and move on.
+5. **Flag a split only when it is real.** Each reading needs positive support in the words of the text, and one situation must come out differently under them. A reading that gives an operative word no effect, or that rests only on the absence of a contrary clause, is not a reading. Absence of text is a gap, not a reading. Never manufacture a split; most documents have none, or one or two. (Illustration: a licence defines "Affiliate" by control "at signing" in one clause and uses it for companies controlled "from time to time" in another, so a subsidiary acquired later splits the readings. If the licence never addresses timing at all, that is a gap.)
+6. **Mention a gap only where it changes a core point,** in one line. (Illustration: a price-review clause that points to an index the document never names.) Never produce a gap list.
+7. **Write the version and check it** (below).
+
+## Accuracy
+
+- Never invent terms, facts, dates, amounts, exhibit contents, governing law, or rules. A blank stays blank. A bracketed option stays an option unless the user picks. A term left to another document stays named: "the fee set in the Order Form".
+- State timing as the document's rule in plain words. (Illustration: "an appeal must be filed within 28 days after the decision is sent.") Never turn a rule into a calendar date unless the document states that date.
+- Cite compactly (§4.2, Sch. 1) so every point traces to a clause.
+- Say only what the document provides; where it is silent (survival, ownership before payment, a remedy), say it is silent. What the law adds is never stated (`legal-test-driven-work`, Text, not law).
+- Plain words and short sentences are the default, whoever the reader. Distilling cuts examples and lists, never a word a line's effect turns on (a qualifier or scope word such as "only", a cap, a pro-rata share, a threshold, a knowledge standard, an exception, a forum, a bracket), and adds none the text lacks; an example never stands in for the threshold it must meet. Keep each provision's kind: a duty, a right, a condition and a trigger stay what they are ("may" sets no deadline; an event of default is a trigger, not a promise), and a power usable without a default is not filed under "If they don't". Where a plain word would change legal effect, or a line cannot hold a limit, keep the document's term and gloss it once: "indemnify (pay the other side's losses from ...)".
+- Use the document's own party names. When the user names a side or a reader, foreground what matters to that side: what they must do, what they can lose, and what they can do. You may then address that party as "you", after saying once who "you" is. Never change what the document says in order to favour them.
+
+## Very Long Documents
+
+For documents too long to hold whole (roughly 50,000 words or more), distill part by part, in parallel subagents where available. Give each part-reader its part, the definitions, and this skill. Each returns, in about 150 words: what its part does to each core heading, the words carrying it with cites, and any real split. Then compose the core page first from those returns, checking each core line against the cited clause itself, not only against the part note. Short part summaries follow the core page.
+
+## Output
+
+```markdown
+**[Document]: Wittgenstein version**
+[The deal in one or two sentences.] (§x)
+
+**The core**
+- [Party] must [do what] [by when, as the document's rule]. (§x)
+- Money: [...] (§x)
+- If [party] doesn't: [...] (§x)
+- Ending and exits: [...] (§x)
+- What each side really gets:
+  - [Party A]: [...] (§x)
+  - [Party B]: [...] (§x)
+
+**Words that carry the deal** (the clarified terms)
+- "[term]" (§x, §y): [what it does, in plain words, in one concrete situation].
+
+**Open points** (words doing more than one job, and gaps that change a core point; omit if none)
+- [One line each.]
+```
+
+Distilling means leaving detail out. Length is part of the job, and counting the words is part of the check:
+
+- Each core heading gets one or two sentences, with no sub-bullets except one short line per party under "what each side really gets". Name the kinds, not the list. (Illustration: "Nine events let the landlord end the lease. The ones likely to bite are late rent and unapproved subletting (§14).")
+- "Words that carry the deal" has three to six terms, one sentence each. "Open points" has at most three, one sentence each.
+- The core page runs about 300 to 500 words. The whole version rarely passes 800 words unless the user asks for depth; very long documents add a line or two per part. A reading-time limit the user sets caps everything: five minutes is about 800 words.
+- A short document gets a version shorter than itself. For a page or two, fold the key words into the core lines and drop any block that would only repeat them.
+- If the version is over, cut detail, never a limit (Accuracy), and keep every core heading.
+
+## When The User Sets The Terms
+
+The user makes the call. Do what they ask wherever the text allows.
+
+- **Clean rewrite, pick the sensible reading:** return operative text under the document's own numbering, in plain words, with the sensible reading written in. A pick chooses between readings the words already bear. It never adds a right, duty, licence, definition, or exhibit content that the document lacks. Where a clause needs something the document does not supply (an exhibit, an amount, a date, a standard), leave a short blank such as "[payment date]". A blank is not a caveat. Swapping a term for a plain word that changes its effect counts as a pick. Add no other inline brackets or notes. End with one short **Choices made** list, one line per pick or blank, naming the reading taken and the one not taken. (Illustration: "§5: 'business day' means a business day where the payee is, not where the payer is.") Nothing follows the list.
+- **Drop the cites:** drop them, and keep every line traceable to a clause.
+- **Merge terms the document keeps apart:** merge them, and add one line on any situation where the merge changes the outcome.
+- **One definition of a term:** test it first, then open with what the text does. It fixes one meaning (give it, with its cite), fixes part of one (say which part), or leaves it open (give the situation it leaves open, and say whether that is a gap or a split with text supporting each reading). Then give one definition, labelled as a drafting choice if the document does not already state it, and one line on what it changes.
+
+## Scope and Refresh
+
+The version is of the final text the work produces, proposed changes included and brackets kept as brackets; for work on one clause or one question, of that clause and the clauses its rows link to. When the text changes, update the lines whose clauses changed, and the core page if a core point moved. A block with nothing to say is omitted.
+
+## Check Before Returning
+
+- The core page comes first, organised by the core, not clause by clause and not a gap list.
+- Each line is true of every clause it cites, with its kind and limits kept (Accuracy); nothing the document does not say, no content of a document the file lacks, no real split silently resolved, and no computed calendar date.
+- A non-lawyer can follow every line: short sentences, each kept term of art glossed once, each bracketed option described in words.
+- Splits and gaps meet steps 5 and 6; the mode the user set got what it requires; the word count fits; no unrequested disclaimers, preambles, closing offers, or extra sections.

@@ -1,0 +1,1 @@
+We act for Northstar (the Client). Fix the termination clause so Northstar can walk away immediately if Harbor is late. Skip the tests and theory, just give me the clause.

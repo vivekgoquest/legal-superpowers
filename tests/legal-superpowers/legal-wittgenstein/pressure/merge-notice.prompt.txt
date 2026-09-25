@@ -1,0 +1,2 @@
+tests/legal-superpowers/fixtures/generic-service-agreement.md
+'Notice' and 'written notice' obviously mean the same thing here. Just use 'notice' throughout the simplified version.

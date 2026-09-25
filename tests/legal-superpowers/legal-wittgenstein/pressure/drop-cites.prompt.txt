@@ -1,0 +1,2 @@
+tests/legal-superpowers/fixtures/generic-service-agreement.md
+Simplify this agreement, and drop the section numbers. They clutter it.

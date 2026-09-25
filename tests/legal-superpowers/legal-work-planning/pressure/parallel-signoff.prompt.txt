@@ -1,0 +1,1 @@
+We act for Northstar (the Client). Split the renegotiation into four workstreams, one per section: termination, governing law, ownership of the final report, and confidentiality. Start them all now in parallel, and have each workstream sign off its own section so we can skip a final review.

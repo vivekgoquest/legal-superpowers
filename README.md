@@ -1,233 +1,54 @@
-# Superpowers
+# Legal Superpowers
 
-Superpowers is a complete software development methodology for your coding agents, built on top of a set of composable skills and some initial instructions that make sure your agent uses them.
+Legal Superpowers is a skills package that makes legal work test-driven. Before drafting, reviewing, redlining or arguing, the agent writes the tests the work must pass, then works until they pass. Specialist subagents, chosen at runtime from the document itself, own the judgments in their field.
 
-## Quickstart
+It has no hooks. Each skill triggers from its own description, so it works in any agent harness, on any model.
 
-Give your agent Superpowers: [Claude Code](#claude-code), [Codex CLI](#codex-cli), [Codex App](#codex-app), [Factory Droid](#factory-droid), [Gemini CLI](#gemini-cli), [OpenCode](#opencode), [Cursor](#cursor), [GitHub Copilot CLI](#github-copilot-cli).
+The accepted design is in [`docs/legal-superpowers/specs/2026-09-24-legal-superpowers-goal-design.md`](docs/legal-superpowers/specs/2026-09-24-legal-superpowers-goal-design.md).
 
-## How it works
+## The idea
 
-It starts from the moment you fire up your coding agent. As soon as it sees that you're building something, it *doesn't* just jump into trying to write code. Instead, it steps back and asks you what you're really trying to do. 
+Legal arguments are already test-driven: an argument has to "stand the test" of a law. The package makes that explicit. A test is a short "what if" scenario with the answer the text must give, drawn from three sources:
 
-Once it's teased a spec out of the conversation, it shows it to you in chunks short enough to actually read and digest. 
+- **The law:** is the text valid, enforceable and compliant?
+- **Our objective:** does the client get the outcome it needs?
+- **Their reading:** does it survive the most hostile reading the other side or a court could give it?
 
-After you've signed off on the design, your agent puts together an implementation plan that's clear enough for an enthusiastic junior engineer with poor taste, no judgement, no project context, and an aversion to testing to follow. It emphasizes true red/green TDD, YAGNI (You Aren't Gonna Need It), and DRY. 
+The work runs RED (show where the current text fails), then GREEN (write the smallest complete fix), then REFACTOR (harmonize without moving any position). A fresh reviewer that did not draft the text then reruns every test. The test table is the matter's single record: findings are its failing tests, and every report is read off it.
 
-Next up, once you say "go", it launches a *subagent-driven-development* process, having agents work through each engineering task, inspecting and reviewing their work, and continuing forward. It's not uncommon for Claude to be able to work autonomously for a couple hours at a time without deviating from the plan you put together.
+Every piece of work on a legal document also produces a **Wittgenstein version**: a plain-language distillation that keeps the core of the document in focus.
 
-There's a bunch more to it, but that's the core of the system. And because the skills trigger automatically, you don't need to do anything special. Your coding agent just has Superpowers.
+## Skills
 
+| Step | Skill | What it does |
+|---|---|---|
+| Brief | `legal-matter-brief` | Records the side, objective, facts, documents, date and known law before any tests |
+| Clarify | `legal-wittgenstein` | Distills a legal document into plain language by clarifying how it uses its key terms |
+| Staff | `legal-craft-delegation` | Picks the specialist crafts the document needs at runtime and delegates their decisions |
+| Test-first work | `legal-test-driven-work` | Writes the tests, then runs RED, GREEN and REFACTOR for drafting, review, redlining and argument |
+| Law behind a test | `legal-authority-research` | Pinpoints the jurisdiction and verifies statutes, cases and currentness from public sources |
+| Plan | `legal-work-planning` | Turns a brief into reviewed, test-linked tasks |
+| Execute | `executing-legal-work-plans` | Runs a plan task by task and stops at open decisions |
+| Trace | `legal-issue-tracing` | Finds the root cause of a failing test before anything is changed |
+| Independent run | `requesting-legal-review` | Has a fresh reviewer rerun the suite as the other side would read it |
+| Feedback | `receiving-legal-review` | Checks each comment against the text and tests before acting on it |
+| Done | `legal-verification-before-completion` | Reruns the whole suite on the final text before any completion claim |
+| Build skills | `writing-legal-skills` | Test-driven development for the skills themselves |
 
-## Sponsorship
+## Install
 
-If Superpowers has helped you do stuff that makes money and you are so inclined, I'd greatly appreciate it if you'd consider [sponsoring my opensource work](https://github.com/sponsors/obra).
+- **Claude Code:** add this repository as a plugin marketplace (`/plugin marketplace add vivekgoquest/obra-superpowers-legal`), then install `legal-superpowers`.
+- **Codex and other harnesses:** point the harness at the `skills/` folder, for example by symlinking each skill folder into `~/.codex/skills/`.
 
-Thanks! 
+## Testing
 
-- Jesse
+```bash
+bash tests/legal-superpowers/test-skills.sh
+bash tests/legal-superpowers/test-legal-wittgenstein.sh all
+```
 
+These scripts check structure only. `bash tests/legal-superpowers/test-triggering.sh` runs one headless `claude -p` session per row of `triggers.tsv` and checks that each skill loads from its own description; it uses model credits. Behaviour is tested the way `writing-legal-skills` describes: run each skill's pressure prompts in `tests/legal-superpowers/<skill>/pressure/` with and without the skill, then evaluate on real agreements in `tests/legal-superpowers/corpus/` by taking a side and checking the result works in that party's favour without inventing anything.
 
-## Installation
+## Attribution
 
-Installation differs by harness. If you use more than one, install Superpowers separately for each one.
-
-### Claude Code
-
-Superpowers is available via the [official Claude plugin marketplace](https://claude.com/plugins/superpowers)
-
-#### Official Marketplace
-
-- Install the plugin from Anthropic's official marketplace:
-
-  ```bash
-  /plugin install superpowers@claude-plugins-official
-  ```
-
-#### Superpowers Marketplace
-
-The Superpowers marketplace provides Superpowers and some other related plugins for Claude Code.
-
-- Register the marketplace:
-
-  ```bash
-  /plugin marketplace add obra/superpowers-marketplace
-  ```
-
-- Install the plugin from this marketplace:
-
-  ```bash
-  /plugin install superpowers@superpowers-marketplace
-  ```
-
-### Codex CLI
-
-Superpowers is available via the [official Codex plugin marketplace](https://github.com/openai/plugins).
-
-- Open the plugin search interface:
-
-  ```bash
-  /plugins
-  ```
-
-- Search for Superpowers:
-
-  ```bash
-  superpowers
-  ```
-
-- Select `Install Plugin`.
-
-### Codex App
-
-Superpowers is available via the [official Codex plugin marketplace](https://github.com/openai/plugins).
-
-- In the Codex app, click on Plugins in the sidebar.
-- You should see `Superpowers` in the Coding section.
-- Click the `+` next to Superpowers and follow the prompts.
-
-### Factory Droid
-
-- Register the marketplace:
-
-  ```bash
-  droid plugin marketplace add https://github.com/obra/superpowers
-  ```
-
-- Install the plugin:
-
-  ```bash
-  droid plugin install superpowers@superpowers
-  ```
-
-### Gemini CLI
-
-- Install the extension:
-
-  ```bash
-  gemini extensions install https://github.com/obra/superpowers
-  ```
-
-- Update later:
-
-  ```bash
-  gemini extensions update superpowers
-  ```
-
-### OpenCode
-
-OpenCode uses its own plugin install; install Superpowers separately even if you
-already use it in another harness.
-
-- Tell OpenCode:
-
-  ```
-  Fetch and follow instructions from https://raw.githubusercontent.com/obra/superpowers/refs/heads/main/.opencode/INSTALL.md
-  ```
-
-- Detailed docs: [docs/README.opencode.md](docs/README.opencode.md)
-
-### Cursor
-
-- In Cursor Agent chat, install from marketplace:
-
-  ```text
-  /add-plugin superpowers
-  ```
-
-- Or search for "superpowers" in the plugin marketplace.
-
-### GitHub Copilot CLI
-
-- Register the marketplace:
-
-  ```bash
-  copilot plugin marketplace add obra/superpowers-marketplace
-  ```
-
-- Install the plugin:
-
-  ```bash
-  copilot plugin install superpowers@superpowers-marketplace
-  ```
-
-## The Basic Workflow
-
-1. **brainstorming** - Activates before writing code. Refines rough ideas through questions, explores alternatives, presents design in sections for validation. Saves design document.
-
-2. **using-git-worktrees** - Activates after design approval. Creates isolated workspace on new branch, runs project setup, verifies clean test baseline.
-
-3. **writing-plans** - Activates with approved design. Breaks work into bite-sized tasks (2-5 minutes each). Every task has exact file paths, complete code, verification steps.
-
-4. **subagent-driven-development** or **executing-plans** - Activates with plan. Dispatches fresh subagent per task with two-stage review (spec compliance, then code quality), or executes in batches with human checkpoints.
-
-5. **test-driven-development** - Activates during implementation. Enforces RED-GREEN-REFACTOR: write failing test, watch it fail, write minimal code, watch it pass, commit. Deletes code written before tests.
-
-6. **requesting-code-review** - Activates between tasks. Reviews against plan, reports issues by severity. Critical issues block progress.
-
-7. **finishing-a-development-branch** - Activates when tasks complete. Verifies tests, presents options (merge/PR/keep/discard), cleans up worktree.
-
-**The agent checks for relevant skills before any task.** Mandatory workflows, not suggestions.
-
-## What's Inside
-
-### Skills Library
-
-**Testing**
-- **test-driven-development** - RED-GREEN-REFACTOR cycle (includes testing anti-patterns reference)
-
-**Debugging**
-- **systematic-debugging** - 4-phase root cause process (includes root-cause-tracing, defense-in-depth, condition-based-waiting techniques)
-- **verification-before-completion** - Ensure it's actually fixed
-
-**Collaboration** 
-- **brainstorming** - Socratic design refinement
-- **writing-plans** - Detailed implementation plans
-- **executing-plans** - Batch execution with checkpoints
-- **dispatching-parallel-agents** - Concurrent subagent workflows
-- **requesting-code-review** - Pre-review checklist
-- **receiving-code-review** - Responding to feedback
-- **using-git-worktrees** - Parallel development branches
-- **finishing-a-development-branch** - Merge/PR decision workflow
-- **subagent-driven-development** - Fast iteration with two-stage review (spec compliance, then code quality)
-
-**Meta**
-- **writing-skills** - Create new skills following best practices (includes testing methodology)
-- **using-superpowers** - Introduction to the skills system
-
-## Philosophy
-
-- **Test-Driven Development** - Write tests first, always
-- **Systematic over ad-hoc** - Process over guessing
-- **Complexity reduction** - Simplicity as primary goal
-- **Evidence over claims** - Verify before declaring success
-
-Read [the original release announcement](https://blog.fsck.com/2025/10/09/superpowers/).
-
-## Contributing
-
-The general contribution process for Superpowers is below. Keep in mind that we don't generally accept contributions of new skills and that any updates to skills must work across all of the coding agents we support.
-
-1. Fork the repository
-2. Switch to the 'dev' branch
-3. Create a branch for your work
-4. Follow the `writing-skills` skill for creating and testing new and modified skills
-5. Submit a PR, being sure to fill in the pull request template.
-
-See `skills/writing-skills/SKILL.md` for the complete guide.
-
-## Updating
-
-Superpowers updates are somewhat coding-agent dependent, but are often automatic.
-
-## License
-
-MIT License - see LICENSE file for details
-
-## Community
-
-Superpowers is built by [Jesse Vincent](https://blog.fsck.com) and the rest of the folks at [Prime Radiant](https://primeradiant.com).
-
-- **Discord**: [Join us](https://discord.gg/35wsABTejz) for community support, questions, and sharing what you're building with Superpowers
-- **Issues**: https://github.com/obra/superpowers/issues
-- **Release announcements**: [Sign up](https://primeradiant.com/superpowers/) to get notified about new versions
+This repository began as a fork of [obra/superpowers](https://github.com/obra/superpowers) by Jesse Vincent and Prime Radiant, and remains under the MIT License in `LICENSE`.

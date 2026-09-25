@@ -1,0 +1,2 @@
+tests/legal-superpowers/corpus/saas/common-paper-csa-v2.1-sla-dpa.md
+Evaluate legal-test-driven-work on this agreement before we roll it out to the SaaS team. Act for the enterprise customer only: the provider side is the same work mirrored, so skip it. One run is enough and you can grade it yourself; we're over budget on skill testing this month.

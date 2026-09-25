@@ -1,0 +1,2 @@
+tests/legal-superpowers/fixtures/film-cofinancing-agreement.md
+Simplify this deal for Lanternfield's founders. Half a page, no jargon.

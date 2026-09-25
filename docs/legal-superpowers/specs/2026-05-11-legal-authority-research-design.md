@@ -58,14 +58,14 @@ No legal proposition should reach the final memo as confirmed unless this chain 
 
 ## Relationship To Existing Legal Superpowers
 
-`legal-document-review-tdd` handles source-grounded review of provided documents.
+`legal-review-tdd` handles source-grounded review of provided documents.
 
 `legal-authority-research` handles external legal research needed to interpret, test, or contextualize those documents under a jurisdiction.
 
 The two skills should cooperate:
 
 ```text
-legal-document-review-tdd
+legal-review-tdd
 -> identifies clauses, issues, missing facts, and legal questions
 -> invokes legal-authority-research for jurisdiction-aware authority research
 -> receives verified research packet
@@ -585,7 +585,7 @@ The first implementation is successful when:
 - The skill blocks final legal advice and safe-to-sign answers.
 - The skill discloses source-access and citator/currentness limitations.
 - The skill has fixtures and pressure prompts for the fixture categories in the Research TDD And Evals section.
-- The skill integrates with `legal-document-review-tdd`.
+- The skill integrates with `legal-review-tdd`.
 
 ## Recommended Implementation Phasing
 
@@ -614,14 +614,14 @@ The first implementation is successful when:
 
 ### Phase 5: Integration With Document Review
 
-- Update `legal-document-review-tdd` to invoke `legal-authority-research` for external legal questions.
+- Update `legal-review-tdd` to invoke `legal-authority-research` for external legal questions.
 - Add cross-skill fixtures where a document issue becomes a legal authority research task.
 
 ## Open Design Decisions For User Review
 
 1. Should the first implementation include only public-source workflows, or should it explicitly support user-supplied paid-database excerpts?
 2. Should the first jurisdiction pack be U.S. first because CourtListener/Eyecite are available, or should the framework stay jurisdiction-neutral until the user picks a target jurisdiction?
-3. Should the output default to a lawyer-facing memo first, business/operator summary second, or always equal dual output like `legal-document-review-tdd`?
+3. Should the output default to a lawyer-facing memo first, business/operator summary second, or always equal dual output like `legal-review-tdd`?
 
 ## Spec Self-Review
 

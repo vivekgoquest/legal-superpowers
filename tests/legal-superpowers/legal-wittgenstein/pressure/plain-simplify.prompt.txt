@@ -1,0 +1,2 @@
+tests/legal-superpowers/fixtures/generic-service-agreement.md
+Simplify this agreement into plain English so my client can understand it. Keep it short.
