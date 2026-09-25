@@ -7,8 +7,6 @@ description: Use when drafting, revising, reviewing, or redlining a contract, cl
 
 ## Overview
 
-Legal work is already test-driven. People ask whether an argument "stands the test" of a law. The rule of law, the client's objective, and the other side's reading are the tests. The clause or argument is what is tested. Facts and scenarios are the fixtures.
-
 Write the tests first. Run them on the current text and watch it fail. Draft the smallest complete change that passes. Run the scenarios. Harmonize.
 
 **Core principle:** If you did not watch the current text fail a scenario, you do not know what your drafting fixes, or whether it fixes anything.
@@ -21,10 +19,8 @@ Write the tests first. Run them on the current text and watch it fail. Draft the
 |---|---|---|---|---|
 | Drafting | New text | The law, our objective, their reading | Deal facts and scenarios | GREEN, REFACTOR |
 | Review | Existing text | Same | Scenarios that stress each mechanism | None: the failing rows after RED are the findings |
-| Redline | Their draft, then our changes | Same, plus our objective against each of their changes | Same | GREEN, REFACTOR |
-| Argument | The argument | Elements of the governing rule, our objective, their best answer to each element | Facts in the record | GREEN, REFACTOR |
-
-A one-line edit still gets its test; the test is one line. The suite scales with the document. The discipline does not.
+| Redline | Their draft (their comments: `receiving-legal-review`), then our changes | Same, plus our objective against each of their changes | Same | GREEN, REFACTOR |
+| Argument | The argument (writing-legal-tests.md, Arguments) | Elements of the governing rule, our objective, their best answer to each element | Facts in the record | GREEN, REFACTOR |
 
 ## The Iron Law
 
@@ -37,11 +33,9 @@ Drafted the clause before the test? Set it aside. Write the test and run it on t
 
 ## The Test Card
 
-A test is a short "what if" question with the answer the work must give.
-
 | Field | Meaning |
 |---|---|
-| Source | Whose test it is: **the law** (valid, enforceable, compliant), **our objective** (the client gets the outcome it needs), or **their reading** (it survives the most hostile reading a counterparty or court could give it) |
+| Source | Whose test it is: **the law** (valid, enforceable, compliant), **our objective** (the client gets the outcome it needs), or **their reading** (writing-legal-tests.md, The Three Sources) |
 | Rule or objective | What must hold |
 | Scenario | The facts or event that trigger it |
 | Expected result | The outcome the text must produce |
@@ -60,23 +54,19 @@ A test is a short "what if" question with the answer the work must give.
 
 **Dependent rows.** Before any table leaves your hands (to the independent run or to the user), check every Pass row mechanically: list each defined term, bracketed value, exhibit, and notice or payment route its Scenario, Expected result, or Evidence runs through (a right exercised by notice, ownership that passes on payment, a deadline in a bracket or in an exhibit the file lacks). If the row governing any of them is Fail, Partial, or Blocked, the row reads "Partial, dependent on [ID]" or "Blocked on [ID]", never Pass. No row governs one yet? Write that row first. A row that turns on what an open item says takes that item's result; a row that only runs through it reads "Partial, dependent on [ID]" (item Fail or Partial) or "Blocked on [ID]" (item Blocked).
 
-**Who records a Pass.** Whoever drafted the text never records a final Pass. Until the independent run returns, every Pass carries its run label from `requesting-legal-review` (Run labels) and counts as open in every open-rows list and verdict.
-
-Read [writing-legal-tests.md](writing-legal-tests.md) before writing or changing tests.
-
 ## The Cycle
 
 ### 0. Brief, terms, crafts
 
 - A test needs a side. Take the brief from `legal-matter-brief`, whose gate decides when one exists.
-- Tests are written in the clarified terms of the document's Wittgenstein version from `legal-wittgenstein`. If none exists yet, produce it now. A test whose expected result turns on an open-ended word ("material", "reasonable", "notice", "delivery", "late") goes to `legal-wittgenstein` first. Until the word is tied to the document's own uses, the test cannot be decided. This holds when the fix deletes the word, and when another clause seems to settle it (its own row, run on the text: writing-legal-tests.md, Their reading).
-- More than one craft needed (tax, data protection, finance, IP, service levels)? `legal-craft-delegation` staffs and runs them (as labeled passes where there is no subagent tool); each craft writes and runs the rows for its area. Rows for a craft that never ran are Blocked as above. A settled edit (`legal-matter-brief`) skips the fan-out.
+- Tests are written in the clarified terms of the document's Wittgenstein version from `legal-wittgenstein`. If none exists yet, produce it now. A test whose expected result turns on an open-ended word ("material", "reasonable", "notice", "delivery", "late") goes to `legal-wittgenstein` first. Until the word is tied to the document's own uses, the test cannot be decided.
+- Crafts (tax, data protection, finance, IP, service levels), even one: `legal-craft-delegation` staffs and runs them; each craft writes and runs the rows for its area. Rows for a craft that never ran are Blocked as above. A settled edit (`legal-matter-brief`) skips the fan-out.
 
 ### 1. Write the tests
 
-For each mechanism the brief puts in play, write tests from each source that bears on it; every suite has at least one row from their reading. Walk every family in "Where Tests Hide" in [writing-legal-tests.md](writing-legal-tests.md). Before keeping a test, name the reading or event that would make it fail. If you cannot, it is not a test.
+Read [writing-legal-tests.md](writing-legal-tests.md) first. For each mechanism the brief puts in play, write tests from each source that bears on it; every suite has at least one row from their reading. Walk every family in its "Where Tests Hide". Before keeping a test, name the reading or event that would make it fail. If you cannot, it is not a test.
 
-Law rows rest on authority verified through `legal-authority-research` for a confirmed jurisdiction at the relevant date; otherwise the row is Blocked, naming the real blocker (different issues can have different laws: `legal-authority-research` step 2). A law the user asks you to assume reads "Assumed at user's request: [law]" in the Evidence of every row it touches.
+Law rows rest on authority verified through `legal-authority-research` for a confirmed jurisdiction at the relevant date; otherwise the row is Blocked, naming the real blocker. Different issues can have different laws, and a law the user asks you to assume is labeled: both as `legal-authority-research` step 2 sets out.
 
 ### 2. RED: run the tests on the current text
 
@@ -86,8 +76,6 @@ For each test, quote the clause with its cite, run the scenario, and state the o
 - New document: the RED is the absent mechanism.
 - Already passes? Keep the text. Do not rewrite to show activity.
 - Cannot explain why it fails, or one fix did not flip it? `legal-issue-tracing`, before changing the test or the text.
-
-Review with no fixes requested: skip steps 3 to 5 and go to step 6.
 
 ### 3. GREEN: the smallest complete change
 
@@ -101,9 +89,9 @@ Draft only what makes the failing tests pass, but make the mechanism complete: a
 
 Apply the new text to ordinary performance; the scenario that failed in RED; the case most favorable to our side; their reading; exceptions and timing boundaries (dates as the Clock rule of `legal-matter-brief` sets out); linked definitions, clauses, schedules, and remedies; and verified law.
 
-**Linked-clause rows are required, in every output mode.** Before any fix or finding is presented, add and run a row for each of: every clause whose money, ownership or survival outcome it changes (a fix that changes what is paid also changes ownership that passes "on payment" and money already paid); every route it is exercised through (notice, acceptance, payment); every route around it either side keeps (convenience and fault exits); every cap, exclusion or exclusive remedy that limits it; every blank or bracket its outcome turns on, quoted with its row, including a clause that voids a provision whose value is left blank; and every date it sets, run against the term end, expiry and each Clock date. Their reading of each word it keeps or adds, brackets and options included, gets a row: when a right can be used, how it is exercised, when it takes effect, whether it lapses, what meets a deadline, whether naming one case excludes the others (survival on termination, where the agreement can also expire), whether it reaches our own side's duties, whether a linked outcome (ownership, a refund) is left unresolved, and whether each reference ("this Section", a defined term) points to the provision intended; number new provisions and cite them by number.
+**Linked-clause rows are required.** Before any fix or finding is presented, add and run a row for every clause whose money, ownership or survival outcome it changes; every route it is exercised through (notice, acceptance, payment) and every route around it either side keeps; every cap, exclusion or exclusive remedy that limits it; every blank or bracket its outcome turns on; and every date it sets, run against the term end, expiry and each Clock date. Their reading of each word it keeps or adds, brackets and options included, gets a row, and so does each reference in new text ("this Section", a defined term): number new provisions and cite them by number.
 
-Still fails? **Correct the drafting. Never weaken an accepted test to make it pass.** Change a test only when it rested on a wrong fact or authority, or the client changes its objective, and state the reason in its row.
+Still fails? **Trace it (`legal-issue-tracing`) before any redraft. Never weaken an accepted test to make it pass.** Change a test only when it rested on a wrong fact or authority, or the client changes its objective, and state the reason in its row.
 
 ### 5. REFACTOR: harmonize without moving positions
 
@@ -116,23 +104,6 @@ Whoever drafted a clause never grades it. Use `requesting-legal-review`: a fresh
 ### 7. Complete
 
 Run the dependent-rows check (The Test Card) on every Pass row, then `legal-verification-before-completion`. Every step still runs and every row is written, linked-clause rows included, whatever the user asked to see. Deliver as `legal-matter-brief` sets out (Delivery order).
-
-## Arguments
-
-The elements of the governing rule are the tests. The facts in the record are the fixtures.
-
-- Take the rule and its elements from verified authority (`legal-authority-research`). An element resting on unverified law is Blocked.
-- One row per element. Scenario: the facts claimed to meet it, each with its record cite. Add a their-reading row for the strongest defense, exception, or counter-reading of each element.
-- RED: an element with no fact, a disputed fact, or contrary authority fails.
-- GREEN: tie a record fact to each element, narrow the claim, or choose another rule. A missing fact is evidence to obtain, never a fact to assert.
-- REFACTOR: order and tighten without dropping an element or overstating a fact.
-
-We act for the Tenant, arguing the Landlord waived a late-rent default:
-
-| ID | Source | Rule or objective | Scenario | Expected result | Evidence | Failure consequence | Result |
-|---|---|---|---|---|---|---|---|
-| A1 | The law | Element 2 of the waiver rule as verified: the Landlord knew of the default | Landlord's 3 March email cites the late rent | Element met | Email of 3 March (R-12); rule: pinpoint cite, current as of the relevant date | Waiver fails on element 2 | Pass (drafter; independent run pending) |
-| A2 | Their reading | Waiver survives the lease's no-waiver clause | Landlord relies on §18, "no waiver unless in writing signed by Landlord" | Argument survives §18 | §18; the record holds no signed writing | Waiver argument fails outright | RED Fail: no record fact meets §18. GREEN: find a signed writing in the record, or choose a rule §18 does not reach, verified first. Never assert a writing the record lacks |
 
 ## Readiness Verdicts
 
@@ -148,21 +119,17 @@ A client that accepts a risk changes its objective: rewrite that row openly, wit
 
 ## Red Flags: STOP and Return to RED
 
-- Clause drafted before the tests
+- Clause drafted before the tests, or tests written to match a finished draft
 - "Just give me the clause" read as permission to skip the tests
 - A Fail with no quoted text or no scenario
-- Tests written to match a finished draft
-- An expected result softened so the draft passes
-- A law row marked Pass on unverified or assumed law
+- An expected result softened so the draft passes, or a law row marked Pass on unverified or assumed law
 - Governing law, exhibit content, a deadline, a fact, or a client position the brief never gave, filled in because it "must" say that
 - No row from their reading
 - A test on "material", "reasonable", or "notice" run before the term is clarified
-- New text with no row for the clauses whose money, ownership, or survival outcome it changes, or that it is exercised through
-- A carve-out, condition, or reach past the instruction ("or otherwise") no test asked for, or a new term with no their-reading row
+- New text with no row for the clauses whose money, ownership, or survival outcome it changes, or that it is exercised through; a carve-out, condition, or reach past the instruction ("or otherwise") no test asked for; or a new term with no their-reading row
 - The drafter grading its own clause; a bare Pass before the independent run returns, or a run label that is not true; a Pass on a row whose dependency is open; an open Pass left out of the open rows
 - "Harmonizing" that moves a position
-- A verdict that does not trace to rows
-- A memo or ledger that restates the table
+- A verdict that does not trace to rows, or a memo or ledger that restates the table
 
 **All of these mean: stop, go back to RED, and run the tests on the text.**
 
@@ -181,16 +148,3 @@ A client that accepts a risk changes its objective: rewrite that row openly, wit
 | "I wrote it, I know it works" | The drafter never grades. Run it fresh-context through `requesting-legal-review`. |
 | "Harmonizing is just cleanup" | Cleanup that shifts risk is a new position. Rerun the affected tests. |
 | "The argument works if we assume a few facts" | A fixture not in the record does not exist. The element fails until the fact is found. |
-| "The Wittgenstein version is extra" | The tests are written in its terms. Without it, tests on open words cannot be decided. |
-
-## Example
-
-We act for the Customer under a services agreement. Objective: data-breach losses are recoverable above the general cap.
-
-| ID | Source | Rule or objective | Scenario | Expected result | Evidence | Failure consequence | Result |
-|---|---|---|---|---|---|---|---|
-| 1 | Our objective | Breach losses recoverable above the general cap | Supplier's error exposes customer records in month 2; loss 400,000; fees paid 20,000 | Customer recovers up to a separate breach cap | §9.1 "limited to the fees paid in the 12 months before the claim" | Customer bears 380,000 | RED Fail: §9.1 caps at 20,000. GREEN: new §9.2 caps Data Breach Claims at [amount]. Blocked: client decision on [amount] |
-| 2 | Their reading | §9.2 cannot be emptied by the exclusions | Supplier calls notification and remediation costs "indirect" | Those costs fall under §9.2, not §9.3 | §9.3 excludes "indirect or consequential loss", undefined | §9.2 recovers nothing | Fail after GREEN on 1. Fix: §9.2 names notification, remediation, and third-party claims as recoverable despite §9.3. Rerun: Pass (drafter; independent run pending) |
-| 3 | The law | The named heads are recoverable under the governing law | Same | Recoverable | §14 names no governing law | §9.2 unenforceable in part | Blocked: jurisdiction unknown; sent to `legal-authority-research` |
-
-Row 2 shows why their reading is a source: the first fix passed our test and failed theirs. Row 1 works as a mechanism but its outcome turns on [amount], so it cannot pass until the client supplies it; row 2's outcome does not, so it stays an open Pass until the step 6 run.

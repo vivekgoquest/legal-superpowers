@@ -21,7 +21,7 @@ NO SUBSTANTIVE LEGAL JUDGMENT WITHOUT A NAMED CRAFT OWNER
 
 Before forming an interpretation, evaluation, recommendation, position or draft, staff the craft that owns it. Extracting quotes, summarizing or checking citations does not fill that seat.
 
-**Solo route.** A settled edit (`legal-matter-brief`) runs solo. If any decision in the task is still open, it is not solo work.
+**Solo route.** A settled edit (`legal-matter-brief`) runs solo.
 
 **No cap.** Staff every craft the document needs, even 20 or more. Cost, time and head-count never remove a needed craft. Save cost through model choice and by batching small same-shape work within one craft, never by dropping a craft. Equally, staff nothing that no clause, gap or fact triggers.
 
@@ -29,9 +29,9 @@ Before forming an interpretation, evaluation, recommendation, position or draft,
 
 ### 1. Start from the brief
 
-Work from the matter brief (`legal-matter-brief`): whose side, the objective, the facts, the documents and their signing status, the relevant date, what is known about governing law, whether confidential facts may go into external searches, and the Wittgenstein version of the document (`legal-wittgenstein`). If there is no brief, write one first. Never assume a governing law. If it is unknown, every craft is told so.
+Work from the matter brief (`legal-matter-brief`): whose side, the objective, the facts, the documents and their signing status, the relevant date, what is known about governing law, whether confidential facts may go into external searches, and the Wittgenstein version of the document (`legal-wittgenstein`). No brief: `legal-matter-brief` first. If the governing law is unknown, every craft is told so.
 
-Never default an Unknown signing status to signed or unsigned. Put the brief's Clock line (`legal-matter-brief`) at the top of the staffing reply and in every craft brief; a date that turns on a question another craft owns reads "depends on [craft]'s [test]", not a date.
+Put the brief's Clock line (`legal-matter-brief`) at the top of the staffing reply and in every craft brief.
 
 ### 2. Discover the crafts
 
@@ -46,11 +46,11 @@ Triggers:
 
 Crafts can be non-legal: tax accountant, engineer for service levels, actuary, insurance broker, valuer, sector compliance specialist.
 
-Keep interacting decisions together. One craft owns a clause family that moves together (cap, exclusions, indemnity), even across documents. A craft for a linked point (the insurance behind the indemnity) may be separate, but depends on the accepted allocation. A craft keeps every decision its profession routinely answers for in this kind of document (a commercial contracts lawyer answers for ordinary confidentiality, ownership of deliverables, and the choice-of-law clause). Staff a specialist only for a call that profession would not answer for, never merely because a specialism exists. Split by accountability, never by page range or heading.
+Keep interacting decisions together. One craft owns a clause family that moves together (cap, exclusions, indemnity), even across documents. A craft for a linked point (the insurance behind the indemnity) may be separate, but depends on the accepted allocation. A craft keeps every decision its profession routinely answers for in this kind of document. Staff a specialist only for a call that profession would not answer for, never merely because a specialism exists. Split by accountability, never by page range or heading.
 
 ### 3. Write the staffing table
 
-Show it in the plan, when there is one, and in the reply, then dispatch in the same turn unless the user asked to approve it first, directed fewer crafts (see below), the brief has an open question that changes the staffing, or the work runs under a plan (`legal-work-planning`), whose executor dispatches the crafts.
+Put it in the plan, when there is one; a reply about staffing shows the table; a delivery shows staffing as `legal-matter-brief` (Delivery order) sets out. Dispatch in the same turn unless the user asked to approve it first, directed fewer crafts (see below), the brief has an open question that changes the staffing, or the work needs a plan (`legal-work-planning`, When not to plan), whose executor dispatches the crafts.
 
 | Craft | Decisions it owns | Finished contribution | Trigger (clause cite, named gap, or brief fact) | Needs from |
 |---|---|---|---|---|
@@ -85,13 +85,13 @@ Findings are failing tests. They go into the matter's test table (`legal-test-dr
 
 - Build the result from the crafts' decisions and fixes. Do not re-decide a craft's judgment or redraft its fix.
 - A change needed inside a craft's area goes back to that craft.
-- When crafts conflict (the privacy craft wants uncapped liability for data breach; the commercial craft wants one cap), decide against the client's objective, state the reason, record the override on the affected tests, and tell the overridden craft.
+- When crafts conflict (the privacy craft wants uncapped liability for data breach; the commercial craft wants one cap), decide only where the brief's objective settles it: state the reason, record the override on the affected tests, and tell the overridden craft. Otherwise the row is Blocked: client decision, with the options (`legal-test-driven-work` step 3).
 - Harmonize definitions, cross-references and survival without moving any craft's position. Rerun the affected tests.
 - Commission the Wittgenstein version of the final text (`legal-wittgenstein`).
 
 ### 8. Verify
 
-A fresh-context reviewer (`requesting-legal-review`) runs the whole suite against the final text as the opposing reader. Failures go back to the owning craft (`receiving-legal-review`). Whoever drafted a clause never grades it. Finish with `legal-verification-before-completion`. The report is read off the test table.
+A fresh-context reviewer (`requesting-legal-review`) runs the whole suite against the final text as the opposing reader. Failures go back to the owning craft (`receiving-legal-review`). Finish with `legal-verification-before-completion`. The report is read off the test table.
 
 ## When Told to Staff Fewer Crafts
 
@@ -103,7 +103,7 @@ A fresh-context reviewer (`requesting-legal-review`) runs the whole suite agains
 - A generalist deciding a call its profession would not answer for.
 - Staffing from the clause headings only, with no check for what is missing.
 - A past-dated document of Unknown signing status briefed as an unsigned draft.
-- A Clock date given as settled when it rests on another craft's open question, or recomputed by rules other than `legal-matter-brief`'s.
+- A Clock date recomputed by rules other than `legal-matter-brief`'s.
 - A row with no trigger, or a decision with no row.
 - The parent forming its own view on a craft's question "to save a round".
 - Dropping or merging crafts to cut cost, time or subagent count.

@@ -25,10 +25,6 @@ No exceptions: not when the user says "just tell me" or wants no research packet
 
 ## When to Use
 
-- A row's rule or expected result depends on law: validity, enforceability, a mandatory rule, a formality, a default rule that fills a gap in the text, what follows if a right is exercised wrongly.
-- Someone asks for the governing or controlling law, the leading cases, a statute, or whether an authority is still good law.
-- A citation arrives from the user, a counterparty, a draft, or your own memory.
-
 A row that turns on the document text alone passes or fails on the text, without research, and decides only what the text provides. What the law adds is a law row (`legal-test-driven-work`, Text, not law). A text Fail does not end the research: the law rows the answer still depends on run.
 
 ## Process
@@ -58,7 +54,7 @@ Under Confirmed or Assumed the lane runs. "Not researched" is allowed only for a
 
 When the governing-law clause is silent, missing, or leaves the choice to a later written agreement, write two rows: a Fail row for the text (no choice in the file, per `legal-test-driven-work`; a writing the choice is deferred to is Not supplied, per `legal-matter-brief`), and an **applicable law** row, Blocked until the forum is known and its conflict-of-laws rules are researched against the connecting facts. Ask for a written choice of law; failing that, the forum and the connecting facts (each party's residence or incorporation, place of performance).
 
-Never infer governing law from party names, entity type, currency, addresses, drafting style, or where the user sits: none of these chooses a law, and which facts connect a contract to a law is for the forum's conflict rules (the applicable-law row). A country or act the user names is a lead to confirm, unless they are asking you to assume it: then it reads "Assumed at user's request: [law]" on every row it touches. Give formation, interpretation, regulation, remedy, enforcement, tax and data each their own lane and status; whether the contract's choice reaches each one is a research question for that lane. Details: `jurisdiction-and-authority.md`.
+Never infer governing law from party names, entity type, currency, addresses, drafting style, or where the user sits: which facts connect a contract to a law is for the forum's conflict rules (the applicable-law row). A country or act the user names is a lead to confirm, unless they are asking you to assume it: then it reads "Assumed at user's request: [law]" on every row it touches. Give formation, interpretation, regulation, remedy, enforcement, tax and data each their own lane and status; whether the contract's choice reaches each one is a research question for that lane. Details: `jurisdiction-and-authority.md`.
 
 ### 3. Map the authority
 
@@ -67,9 +63,9 @@ Work out what binds in that system before ranking anything: its sources of law, 
 ### 4. Research two tracks
 
 - **Positive law.** The official text in force on the event date and on the as-of date, with the checks in `jurisdiction-and-authority.md`. A consolidated text is not proof that it is current.
-- **Case law.** Every decision you rely on, and every one that cuts against you, goes into the precedent coding table below.
+- **Case law.** Every decision you rely on, and every one that cuts against you, goes into the precedent coding table (`jurisdiction-and-authority.md`).
 
-Run both unless the system or the question makes one irrelevant, and say why. Independent lanes (a track, a jurisdiction, a row) can go to separate subagents through the parent, with no cap on how many.
+Run both unless the system or the question makes one irrelevant, and say why. Independent lanes (a track, a jurisdiction, a row) can go to separate subagents through the parent.
 
 ### 5. Verify every citation
 
@@ -99,43 +95,24 @@ External queries carry the legal issue, the clause type, and the jurisdiction. T
 
 ### 8. Write the result into the test card
 
-See "Recording the Result". Every part the file lacks that the verdict depends on goes in the "Not supplied" line, described as `legal-test-driven-work` (Fail or Blocked) sets out. Then hand the judgment to the owning craft, or answer the user with the template below.
-
-## Precedent Coding Table
-
-One row per decision, attached to the test it serves.
-
-| Decision and pinpoint | Court and level | Date | Key facts | Holding | Cuts for or against this test | Subsequent treatment; still good law (as of, sources) | Weight |
-|---|---|---|---|---|---|---|---|
-
-- **Holding:** the proposition necessary to the result, in that system's terms. Mark dicta, separate opinions, and commentary as such.
-- **Cuts:** measured against this test's expected result, not in the abstract.
-- **Weight:** binding on the likely forum, persuasive, non-precedential, or unclear, with the rule that makes it so.
-- Keep the adverse rows. A table with only favorable rows is not finished.
-
-The table shows where precedent currently sits; the owning craft judges what that means for the clause. A verified split is evidence, not a gap: code both lines, say which binds the likely forum, if either does, and leave the grade to the craft.
+See "Recording the Result". Every part the file lacks that the verdict depends on goes in the ask (`legal-matter-brief`, Delivery order), described as `legal-test-driven-work` (Fail or Blocked) sets out. Then hand the judgment to the owning craft, or answer the user with the template below.
 
 ## Recording the Result
 
-The test card and the test table are the matter's single record. Do not start a research memo, source ledger, or claim ledger beside them. Rows use the test table's columns (`legal-test-driven-work`).
+Rows use the test table's columns and grading (`legal-test-driven-work`), in its single record. This skill adds the Evidence cell:
 
-Grade every row by `legal-test-driven-work`. This skill adds two things:
-
-- **Evidence cell:** `[Proposition] · [Authority, pinpoint, link] · Current as of [date]: [what was checked, where] · Contrary: [authority, or "none found in (sources)"] · Jurisdiction: [Confirmed | Assumed at user's request: [law]]`
-- **Blocked for law:** jurisdiction not pinned, authority not opened, or currentness not verifiable from free sources. Name what would unblock it.
+`[Proposition] · [Authority, pinpoint, link] · Current as of [date]: [what was checked, where] · Contrary: [authority, or "none found in (sources)"] · Jurisdiction: [Confirmed | Assumed at user's request: [law]]`
 
 ## Answering the User
 
-When the user asked directly, answer with this template, then deliver as `legal-matter-brief` sets out (Delivery order): "just tell me", "no research packet" or "no caveats" asks for the answer alone, which holds the rows and the precedent table back; the template lines stay. Each line is mandatory whenever it applies; "no caveats" removes none of them.
+When the user asked directly, answer with this template, then deliver as `legal-matter-brief` sets out (Delivery order): "just tell me", "no research packet" or "no caveats" asks for the answer alone, which holds the rows and the precedent table back; the template lines stay, and "no caveats" removes none of them.
 
 ```text
-[Verdict, read off the deciding row, citing the clause or authority. Deciding row Fail on the text: "Not on the text in the file: [what the trigger needs, cited]; [what the main text provides] ([part] Not supplied)." Resting on the text alone: begin "Under the text,". Then each other route to the same end, from the text or a law row, with its clause or row ID and that row's result; dates as the Clock rule of `legal-matter-brief` sets out.]
+[Verdict, read off the deciding row, citing the clause or authority. Deciding row Fail on the text: say what the file lacks, as `legal-test-driven-work` (Fail or Blocked) sets out, and what the main text provides. Resting on the text alone: begin "Under the text,". Then each other route to the same end, from the text or a law row, with its clause or row ID and that row's result; dates as the Clock rule of `legal-matter-brief` sets out.]
 Jurisdiction: [Confirmed: law, source | Assumed at user's request: X; what the document says about governing law; "researched: authority, pinpoint" or "not researched: [named inability from step 2]" | Unknown: the items that would pin it].
-Not supplied: [each part the file lacks that the verdict depends on, described only by what the main text says of it].
-Blocked: [row IDs grouped by what unblocks them; one line per blocker.]
 ```
 
-State each point once; notes point to rows instead of restating them. Under Unknown status the Jurisdiction line replaces the pinpoint table. Omit an empty precedent table (the Blocked line says why). If no side is stated, label objective rows "Our objective (assumed)". A longer research memo only if asked, and still derived from the table.
+Under Unknown status the Jurisdiction line replaces the pinpoint table. Omit an empty precedent table.
 
 ## Red Flags: STOP
 
@@ -162,17 +139,12 @@ All of these mean: go back to the step you skipped.
 |---|---|
 | "I know this case." | Memory misremembers names, holdings, and treatment. Open it or it is a lead. |
 | "No paid citator, so skip currentness, or add a caveat." | Run the free check and name the sources. If it cannot cover the case, the row is Blocked with what unblocks it. A caveat is not a result. |
-| "LLC, Inc., and US dollars: it is US law." | None of these chooses a governing law. Read the clause; if it is silent, the jurisdiction is Unknown. |
 | "The user said assume New York law, so drop the label." | The assumption is allowed. The label, with its researched or named-inability clause, is what makes the answer true. |
 | "The user said no research packet, or wanted it short, so I skipped research." | Short output, full research. The packet is what you leave out of the answer, not the work behind it. |
 | "I framed the questions; running them can wait." | Blocked means you could not verify it, not that you did not try. Run them, or name the inability. |
-| "The user wants no caveats." | Verdict first. The Jurisdiction, Not supplied, and Blocked lines are one line each and are never dropped. |
+| "The user wants no caveats." | Verdict first. The Jurisdiction line and the ask (`legal-matter-brief`, Delivery order) stay. |
 | "I found support; contrary search is overkill." | The other side runs that search. An unseen adverse case is a failing test you did not write. |
 | "A leading firm's alert says so." | Secondary. Follow it to the primary authority and cite that. |
 | "Same facts, so it binds." | Weight comes from court, hierarchy, and publication status, not factual similarity. |
 | "Party names will find better cases." | Law is found by issue, not by parties. Confidential facts stay out unless allowed. |
 | "It fails on the text, so the law is moot." | The text decides what the text provides. The law rows the answer still depends on (a right the law adds, the risk of a wrong exercise) still run. Research nothing else. |
-
-## Integration
-
-`legal-test-driven-work` sends a test here when its rule depends on law and owns the card and the grading. `legal-craft-delegation` staffs research lanes; results go back to the owning craft. `legal-verification-before-completion` rechecks every Evidence cell against this skill before delivery.

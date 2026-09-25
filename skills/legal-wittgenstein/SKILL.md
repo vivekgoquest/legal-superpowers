@@ -9,7 +9,7 @@ description: Use when anyone works on, reads, explains, simplifies, or summarise
 
 Every piece of work on a legal document comes with a Wittgenstein version: a short, plain-language distillation that puts the core of the document in focus where legalese muddles it. The distillation is the output. Conceptual clarification is how it earns fidelity: find the words the deal turns on, look at what the operative clauses actually do with them, and say in plain words what they do in concrete situations.
 
-The method is a practical adaptation of later Wittgenstein: look for a word's meaning in how the document uses and applies it, not in a hidden essence or a dictionary; test understanding by application; and notice when a picture (a heading, a label, a familiar deal shape) supplies content the text does not state. It is not Wittgenstein's doctrine and not a theory of legal interpretation. Comparing a word's uses across one document resembles the whole-text reading lawyers already do; here it is a way of seeing, not a rule of construction, and it applies no jurisdiction's rules unless the document or the user names one. One deliberate departure: the source method starts from what troubles the user, but here the document is the difficulty, so the work starts from the words its deal turns on.
+The method is a practical adaptation of later Wittgenstein: look for a word's meaning in how the document uses and applies it, not in a hidden essence or a dictionary; test understanding by application; and notice when a picture (a heading, a label, a familiar deal shape) supplies content the text does not state. It is not Wittgenstein's doctrine and not a theory of legal interpretation. Comparing a word's uses across one document resembles the whole-text reading lawyers already do; here it is a way of seeing, not a rule of construction, and it applies no jurisdiction's rules. One deliberate departure: the source method starts from what troubles the user, but here the document is the difficulty, so the work starts from the words its deal turns on.
 
 ## The Core
 
@@ -17,12 +17,12 @@ Organise the version around the core, never clause by clause:
 
 - **The deal:** what is exchanged, between whom, in one or two sentences.
 - **Who must do what, by when.**
-- **Money:** amounts, when payable, what triggers payment.
+- **The economics:** amounts, when payable, and what triggers payment. Where money is pooled, lent, recouped, or shared, also: who puts in what; who carries each loss (overruns, shortfalls, a default); the order money comes back, each step with its amount, cap, or percentage; what must be recovered before each party earns anything; and what each ends up with. A figure the document's numbers fix but do not state may be worked out, labelled "(derived)".
 - **If they don't:** what counts as default or breach, and what the other side can then do.
 - **Ending and exits:** term, termination rights, walk-away or transfer rights, what the text says survives.
-- **What each side really gets:** after the conditions, caps, and carve-outs, one line per party.
+- **What each side really gets:** after the conditions, caps, and carve-outs, one line per party, in money terms wherever money moves.
 
-Use only the headings the document engages; a voting agreement may have no money line. Boilerplate appears only where it changes a core point.
+Use only the headings the document engages; a voting agreement may have no economics line. Boilerplate appears only where it changes a core point.
 
 ## Process
 
@@ -57,7 +57,7 @@ For documents too long to hold whole (roughly 50,000 words or more), distill par
 
 **The core**
 - [Party] must [do what] [by when, as the document's rule]. (§x)
-- Money: [...] (§x)
+- The economics: [who puts in what; who carries each loss; the payment order, each step with its amount or cap; what is recovered before each side earns] (§x)
 - If [party] doesn't: [...] (§x)
 - Ending and exits: [...] (§x)
 - What each side really gets:
@@ -73,9 +73,9 @@ For documents too long to hold whole (roughly 50,000 words or more), distill par
 
 Distilling means leaving detail out. Length is part of the job, and counting the words is part of the check:
 
-- Each core heading gets one or two sentences, with no sub-bullets except one short line per party under "what each side really gets". Name the kinds, not the list. (Illustration: "Nine events let the landlord end the lease. The ones likely to bite are late rent and unapproved subletting (§14).")
+- Each core heading gets one or two sentences, with no sub-bullets except one short line per party under "what each side really gets" and one per step of a payment order. Name the kinds, not the list, except in a payment order: every step stays, with its amount, cap, or percentage (Accuracy). (Illustration: "Nine events let the landlord end the lease. The ones likely to bite are late rent and unapproved subletting (§14).")
 - "Words that carry the deal" has three to six terms, one sentence each. "Open points" has at most three, one sentence each.
-- The core page runs about 300 to 500 words. The whole version rarely passes 800 words unless the user asks for depth; very long documents add a line or two per part. A reading-time limit the user sets caps everything: five minutes is about 800 words.
+- The core page runs about 300 to 500 words. The whole version rarely passes 800 words unless the user asks for depth; very long documents add a line or two per part. A length or reading-time limit the user sets caps everything: half a page is about 250 words, a page about 500, five minutes about 800.
 - A short document gets a version shorter than itself. For a page or two, fold the key words into the core lines and drop any block that would only repeat them.
 - If the version is over, cut detail, never a limit (Accuracy), and keep every core heading.
 
@@ -83,10 +83,10 @@ Distilling means leaving detail out. Length is part of the job, and counting the
 
 The user makes the call. Do what they ask wherever the text allows.
 
-- **Clean rewrite, pick the sensible reading:** return operative text under the document's own numbering, in plain words, with the sensible reading written in. A pick chooses between readings the words already bear. It never adds a right, duty, licence, definition, or exhibit content that the document lacks. Where a clause needs something the document does not supply (an exhibit, an amount, a date, a standard), leave a short blank such as "[payment date]". A blank is not a caveat. Swapping a term for a plain word that changes its effect counts as a pick. Add no other inline brackets or notes. End with one short **Choices made** list, one line per pick or blank, naming the reading taken and the one not taken. (Illustration: "§5: 'business day' means a business day where the payee is, not where the payer is.") Nothing follows the list.
+- **A clean or unambiguous rewrite of the operative text, picking the sensible reading:** that is drafting, not a Wittgenstein version: `legal-test-driven-work`.
 - **Drop the cites:** drop them, and keep every line traceable to a clause.
 - **Merge terms the document keeps apart:** merge them, and add one line on any situation where the merge changes the outcome.
-- **One definition of a term:** test it first, then open with what the text does. It fixes one meaning (give it, with its cite), fixes part of one (say which part), or leaves it open (give the situation it leaves open, and say whether that is a gap or a split with text supporting each reading). Then give one definition, labelled as a drafting choice if the document does not already state it, and one line on what it changes.
+- **One definition of a term:** test it first, then open with what the text does. It fixes one meaning (give it, with its cite), fixes part of one (say which part), or leaves it open (give the situation it leaves open, and say whether that is a gap or a split with text supporting each reading). Where the document does not state one, writing a definition is drafting: `legal-test-driven-work`.
 
 ## Scope and Refresh
 
@@ -95,6 +95,6 @@ The version is of the final text the work produces, proposed changes included an
 ## Check Before Returning
 
 - The core page comes first, organised by the core, not clause by clause and not a gap list.
-- Each line is true of every clause it cites, with its kind and limits kept (Accuracy); nothing the document does not say, no content of a document the file lacks, no real split silently resolved, and no computed calendar date.
+- Each line is true of every clause it cites, with its kind and limits kept (Accuracy); nothing the document does not say, no content of a document the file lacks, no real split silently resolved, and no computed calendar date. Every "(derived)" figure is recomputed from the cited figures.
 - A non-lawyer can follow every line: short sentences, each kept term of art glossed once, each bracketed option described in words.
 - Splits and gaps meet steps 5 and 6; the mode the user set got what it requires; the word count fits; no unrequested disclaimers, preambles, closing offers, or extra sections.

@@ -40,10 +40,10 @@ One scenario per file, at `tests/legal-superpowers/<skill>/pressure/<short-name>
 |---|---|
 | Time | "The client call is in ten minutes." |
 | Authority | "The partner already gave me these citations." |
-| Sunk cost | "I already redrafted Section 6." |
+| Sunk cost | "I already redrafted the termination clause." |
 | Cost | "Just use one general contracts lawyer. It's cheaper." |
 | Shortcut | "Skip the tests, just give me the clause." "Don't ask me any questions." |
-| Assumption | "Assume New York law." "Exhibit A is our standard SOW." |
+| Assumption | "Assume New York law." "The missing schedule is our standard form." |
 | Cosmetic | "I need an all-green table." |
 | Confidentiality | "Search the web however you need to." |
 
@@ -52,7 +52,7 @@ Make the agent act ("Redline this for us today"), never recite ("What does the s
 ## The Cycle
 
 1. **Find the owner.** Name the failing behavior and the skill that owns it. The package has no skill per legal field: indemnity, tax, or licensing expertise is a craft chosen at runtime (`legal-craft-delegation`) and tested through `legal-test-driven-work`. A failure is almost always a gap in an existing skill. Write a new skill only when the baseline fails and no existing skill can own the fix.
-2. **Write the prompts first.** Three or more for a discipline skill, each combining pressures, before any skill text. The fixture carries seeded gaps; its expected-findings file predates these conventions, so write expected behavior from the text, not from that file. Corpus agreements bring length, real parties, redactions, and blanks.
+2. **Write the prompts first.** Three or more for a discipline skill, each combining pressures, before any skill text. Corpus agreements bring length, real parties, redactions, and blanks.
 3. **RED: run without the skill.** One fresh agent per prompt, the same material, the rest of the package installed as skills. For an edit, the baseline is the current version. Record what the agent did and its rationalizations word for word. Baseline passes? There is nothing to fix: "no change needed". Stop.
 4. **GREEN: write the smallest skill that fixes those failures.** Address what you saw, not what you imagine. Match the form to the failure. Apply the package conventions.
 5. **Rerun with the skill.** Same prompts, same material, fresh agents, the whole package installed, three or more runs per prompt. Read every output. One pass can be luck. A run where the skill never loaded is a description failure: fix the triggers, not the body.
@@ -63,7 +63,7 @@ Make the agent act ("Redline this for us today"), never recite ("What does the s
 
 **No subagent tool?** A baseline run by the agent writing the skill is contaminated. Give the user the prompt files (no file tool: each prompt's text inline under its target path) and the steps to run each in a fresh session, and report those scenarios Blocked until the results come back.
 
-**Told to skip testing?** They want the result fast. Write the prompt files and run the baselines in parallel in the same turn, without stopping to ask first. Deliver first what the baselines yield: "no change needed" when they pass; when they fail, the edit to the owning skill, or a new SKILL.md only when no existing skill can own the fix. Then, in the reply, one or two lines per scenario and one line for all Blocked on one cause; the full expected behavior stays in the run record file. If the user, told that an untested skill teaches guesses, still directs no runs, report every scenario Blocked, "not run (user direction)", then write the skill. A skill per legal field reverses the package's accepted decision that experts are discovered at runtime, with no skill per field: say so first, in one line; if the user still directs it, record the reversal in the goal spec and in the skill set of `tests/legal-superpowers/test-skills.sh`, then write the skill.
+**Told to skip testing?** Write the prompt files and run the baselines in parallel in the same turn, without stopping to ask first. Deliver first what the baselines yield: "no change needed" when they pass; when they fail, the edit to the owning skill. Then, in the reply, one or two lines per scenario and one line for all Blocked on one cause. If the user, told that an untested skill teaches guesses, still directs no runs, report every scenario Blocked, "not run (user direction)", then write the skill. A skill per legal field reverses the package's accepted decision that experts are discovered at runtime, with no skill per field: say so first, in one line; if the user still directs it, record the reversal in the goal spec and in the skill set of `tests/legal-superpowers/test-skills.sh`, then write the skill.
 
 ## Match the Form to the Failure
 
@@ -88,7 +88,7 @@ Check every skill against these before the rerun:
 - **Accuracy:** a skill points to the accuracy rules by owner (work-product checks: `legal-verification-before-completion`; grading and Text, not law: `legal-test-driven-work`; jurisdiction: `legal-authority-research`) and never restates them.
 - **One owner per rule:** each rule, label and field value lives in the skill that owns it. Another skill, or a brief or prompt sent to a subagent, points to it in one line by skill name (a subagent brief also gives the file path) and copies only matter data (the brief's governing-law, external-search and Clock lines). A second or conflicting copy is a defect, even one that agrees today.
 - **No material facts:** never put fixture or corpus facts (party names, clause numbers, a document's wording or gaps) into a skill. Examples are generic, and a generic example never sits in quotation marks where it could be taken for a document's words.
-- **Resources:** no cap on fan-out. No paid research database: official and free public sources only.
+- **Resources:** fan-out as `legal-craft-delegation` (No cap) and sources as `legal-authority-research` step 6 set out.
 - **Lean:** SKILL.md under about 150 lines. A supporting file only for a template the agent fills or heavy reference. Legal vocabulary only: translate the software terms of an upstream source.
 - **Porting an upstream Superpowers skill:** keep its core rule, ordered process, red flags, and rationalization table, translated into legal work.
 
@@ -105,7 +105,7 @@ Mechanical rules are checked by script, not by judges: `bash tests/legal-superpo
 - One passing run called done
 - A description that summarizes the workflow
 - A fix that makes the agent hedge, decline a verdict, or hand off
-- A corpus redaction, blank, or published default selection misread (filled in, read as a drafting gap, or treated as agreed; a default applies if kept), or a caption or label read as settling what its clause does, or dismissed where another clause gives it effect
+- A corpus redaction, blank, or published default selection misread (filled in, read as a drafting gap, or treated as agreed)
 - An expected behavior softened so a run passes, or covering fewer clauses than the material links to the ones it quotes
 - Several skills written before the first is tested
 - Judges or corpus runs cut to save cost

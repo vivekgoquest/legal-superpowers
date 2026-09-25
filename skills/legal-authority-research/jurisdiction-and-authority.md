@@ -85,6 +85,20 @@ For every material legal text:
 9. **Interpretation:** decisions applying this exact provision, and official interpretive material.
 10. **Pinpoint:** section, article, or rule, with a link to the best official version.
 
+## Precedent coding table
+
+One row per decision, attached to the test it serves.
+
+| Decision and pinpoint | Court and level | Date | Key facts | Holding | Cuts for or against this test | Subsequent treatment; still good law (as of, sources) | Weight |
+|---|---|---|---|---|---|---|---|
+
+- **Holding:** the proposition necessary to the result, in that system's terms. Mark dicta, separate opinions, and commentary as such.
+- **Cuts:** measured against this test's expected result, not in the abstract.
+- **Weight:** binding on the likely forum, persuasive, non-precedential, or unclear, with the rule that makes it so.
+- Keep the adverse rows. A table with only favorable rows is not finished.
+
+The table shows where precedent currently sits; the owning craft judges what that means for the clause. A verified split is evidence, not a gap: code both lines, say which binds the likely forum, if either does, and leave the grade to the craft.
+
 ## Case-law checks
 
 Before classifying a decision, establish the local precedent rules: court hierarchy, vertical and horizontal effect, whether decisions bind or only persuade, publication and citation rules, the effect of panel size or full-court review, and whether later decisions or legislation can displace a rule. Use the system's own terms; "holding", "ratio", "dicta", and "good law" are not universal.

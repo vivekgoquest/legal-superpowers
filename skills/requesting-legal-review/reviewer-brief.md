@@ -17,12 +17,9 @@ text fails [party].
 - Relevant date: [date, and why]
 - Facts and assumptions: [from the brief: each fact with its cite or
   "user said"; each assumption with what changes if it is wrong]
-- Governing law / forum: [the matter brief's line]. Never supply one. A
-  law the user asked you to assume reads "Assumed at user's request:
-  [law]"; carry it into every row resting on it.
+- Governing law / forum: [the matter brief's line]
 - External search: [the matter brief's line]; queries as
-  `legal-authority-research` step 7 sets out. No paid research database
-  is available: use official and free public sources.
+  `legal-authority-research` step 7 sets out.
 
 ## What to read
 - Text under review: [path, version]
@@ -63,8 +60,9 @@ the row in your return.
    rows).
 3. Write the missing tests. Each hostile reading from step 1 that no card
    covers becomes a new card, REV-1 onward, with its result. Check that
-   each mechanism in play has rows from all three sources: the law, our
-   objective, their reading.
+   each mechanism in play has rows from each source that bears on it (the
+   law, our objective, their reading), and the suite at least one from
+   their reading.
 4. Check the Wittgenstein version against the text under
    `legal-wittgenstein` (skills/legal-wittgenstein/SKILL.md: Accuracy;
    Check Before Returning). A mismatch is a finding, cited to the clause.
@@ -74,8 +72,8 @@ the row in your return.
   (skills/legal-verification-before-completion/SKILL.md) to every claim
   about the text.
 - A hostile reading stays within the their-reading bounds of
-  `legal-test-driven-work` (writing-legal-tests.md, The Three Sources):
-  write it as what [counterparty] can argue; whether it wins is a law row.
+  `legal-test-driven-work` (skills/legal-test-driven-work/writing-legal-tests.md,
+  The Three Sources).
 - "Could be clearer" is not a Fail. Do not soften a real Fail either.
 - Give the verdict the rows support, with no disclaimer
   (`legal-matter-brief`, Delivery order).
@@ -86,15 +84,16 @@ the row in your return.
   verified authority; or the work states a fact, clause, definition,
   exhibit content, citation or authority the sources do not contain.
 - Important: a Fail, Partial or Blocked row with a material consequence
-  short of Critical; a mechanism in play with no row from one of the
-  three sources.
+  short of Critical; a mechanism in play with no row from a source that
+  bears on it.
 - Minor: changes no outcome in any scenario you ran.
 Not everything is Critical. A row failing on a document not supplied is
 graded on what happens if that document does not answer it.
 
 ## Return
-1. First line: "Ready for [next step]: Yes" or "Ready for [next step]:
-   No". Yes only if every row passes on your run.
+1. First line: the verdict line of `legal-test-driven-work`
+   (skills/legal-test-driven-work/SKILL.md, Readiness Verdicts), for your
+   run.
 2. One table of every row you ran, REV rows included, ranked Critical,
    Important, Minor, then Pass; within each, defects in the text before
    rows that fail only because the file lacks a document ("file lacks
@@ -115,7 +114,7 @@ Status: DONE | DONE_WITH_CONCERNS | NEEDS_CONTEXT | BLOCKED
 
 We act for the Customer under a SaaS agreement. Objective: the Customer gets all its data back when the agreement ends, before the Supplier may delete it. The drafter added §14.3: "On termination, Supplier will return all Customer Data to Customer within 30 days."
 
-Ready for signing: No
+Ready for signing: No; open: 3 Fail, 0 Partial, 0 Blocked, 0 open Pass; deciding rows: DATA-1 (Fail): deletion only after the return; REV-1 (Fail): return on expiry too; REV-2 (Fail): a stated format
 
 | ID | Result | Severity | Clause and quote | Scenario -> what the text produces | Failure consequence | What turns it to Pass |
 |---|---|---|---|---|---|---|

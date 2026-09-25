@@ -18,7 +18,7 @@ NO TASK DONE UNTIL ITS ROWS HAVE RESULTS FROM THE TEXT, AND NO DRAFTED ROW PASSE
 NO DECISION, FACT, DOCUMENT, OR LAW FILLED IN TO KEEP THE PLAN MOVING
 ```
 
-This skill runs the plan; the crafts own the judgments inside it. Tasks owned by different crafts, or independent tasks that can run in parallel, go out through `legal-craft-delegation`, every independent one in the same turn, with no cap. A task you draft yourself, unless it is a settled edit, runs as its owning craft's labeled pass (`legal-craft-delegation` step 5), with that craft's prefix on its row IDs. No plan yet: `legal-work-planning` first.
+This skill runs the plan; the crafts own the judgments inside it. Tasks owned by different crafts, or independent tasks that can run in parallel, go out through `legal-craft-delegation`, every independent one in the same turn. A task you draft yourself, unless it is a settled edit, runs as its owning craft's labeled pass (`legal-craft-delegation` step 5), with that craft's prefix on its row IDs. No plan yet: `legal-work-planning` first.
 
 ## Process
 
@@ -62,7 +62,7 @@ Follow the plan's approach. If the tests show it fails, stop and show the failin
 
 Stop the affected task when:
 
-- a decision only the client can make is missing: a choice of law or forum, a commercial value, a fallback, a risk to accept;
+- a decision only the client can make is missing: a choice of law or forum, a commercial value, a fallback, a risk to accept. Inside the task's mechanism, `legal-test-driven-work` step 3 brackets it instead, and the task is Open, not Held;
 - a fact or document the task needs is not in the file (an exhibit, a signature page, a date, an amount), including drafting that would rely on what a missing document says;
 - the jurisdiction is unknown, or the law behind a row is unverified or its currentness cannot be confirmed from official or free public sources;
 - research finds contrary authority or a mandatory rule the plan did not anticipate;
@@ -76,7 +76,7 @@ Stop the affected task when:
 - Say what it holds (tasks and rows), the options with the rows each would pass and any open position each makes worse, and what the answer changes.
 - Where the other side must agree (a new date, amount, or governing law), the client chooses what to propose, and the rows resting on it stay open until it is agreed. Candidate laws: law rows run per candidate through `legal-authority-research`, each labeled.
 - The rows stay open as `legal-test-driven-work` sets out.
-- A labeled assumption only when the user asks for one, labeled on every row it touches and in the brief.
+- A labeled assumption only when the user asks for one, labeled as `legal-verification-before-completion` (Work-Product Checks) sets out.
 
 **Keep going on what is independent.** A task is independent of a held question when neither its text nor its rows turn on the answer: run it. A task whose drafting is independent but whose law rows wait on the answer: draft it and run the other rows; its law rows stay Blocked and the task stays Open.
 
@@ -104,10 +104,10 @@ Then wait for feedback. Told to run straight through: report and continue, still
 1. Run the whole suite on the integrated text, not only the changed clauses. Tasks that pass alone can fail together.
 2. Harmonize without moving positions; rerun the affected rows.
 3. Commission the Wittgenstein version of the final text (`legal-wittgenstein`).
-4. `requesting-legal-review`: a fresh-context opposing reader runs the whole suite on the final text. Only its results close an open Pass and turn a Drafted task into Done. Weigh them with `receiving-legal-review`; each failure goes back to its owning task or craft. Whoever drafted a clause never grades it.
+4. `requesting-legal-review`: a fresh-context opposing reader runs the whole suite on the final text. Only its results close an open Pass and turn a Drafted task into Done. Weigh them with `receiving-legal-review`; each failure goes back to its owning task or craft.
 5. `legal-verification-before-completion` before calling any of it done.
 
-Deliver in the order `legal-matter-brief` sets out, with the last batch report folded into its opening lines: the status tally, the Clock line, and each open question on one line with its options. Then the clauses, the test table under the brief, and the Wittgenstein version of the final text. No line restates the table's Result column. The plan is complete only when every task is Done and the whole suite has run on the final text; "finished" never hides a Blocked row or an open Pass.
+Deliver as `legal-matter-brief` sets out (Delivery order); open questions and their options go in the ask. The plan is complete only when every task is Done and the whole suite has run on the final text; "finished" never hides a Blocked row or an open Pass.
 
 ## Red Flags: Stop
 

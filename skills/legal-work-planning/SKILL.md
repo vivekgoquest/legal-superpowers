@@ -1,13 +1,13 @@
 ---
 name: legal-work-planning
-description: Use when an agreed matter brief calls for legal work with more than one step, such as several clauses, issues, or documents, more than one craft, research or a client decision that must come before drafting, or a negotiation over several points; when asked to plan, sequence, scope, stage, or map out a review, redline, renegotiation, drafting project, diligence exercise, or legal argument; when asked for a work plan, action list, or negotiation plan for a legal matter; when told to skip the plan, go straight to drafting, split the work into parallel workstreams by section, or leave a decision such as governing law until the end; or when a plan already exists and a new fact, document, client decision, or review result changes the work.
+description: Use when a matter brief calls for legal work with more than one step, such as several clauses, issues, or documents, more than one craft, research or a client decision that must come before drafting, or a negotiation over several points; when asked to plan, sequence, scope, stage, or map out a review, redline, renegotiation, drafting project, diligence exercise, or legal argument; when asked for a work plan, action list, or negotiation plan for a legal matter; when told to skip the plan, go straight to drafting, split the work into parallel workstreams by section, or leave a decision such as governing law until the end; or when a plan already exists and a new fact, document, client decision, or review result changes the work.
 ---
 
 # Legal Work Planning
 
 ## Overview
 
-A plan turns an agreed brief into tasks an executor can run without asking what to do or deciding anything the brief left to the client. Each task names the clause or issue, the owning craft, the tests it must make pass, what it waits for, and what done means. Order does the rest: a drafting task placed before the law, fact, or client decision it rests on produces text that passes nothing.
+A plan turns a brief into tasks an executor can run without asking what to do or deciding anything the brief left to the client. Each task names the clause or issue, the owning craft, the tests it must make pass, what it waits for, and what done means. Order does the rest: a drafting task placed before the law, fact, or client decision it rests on produces text that passes nothing.
 
 **Core rule:**
 
@@ -20,8 +20,7 @@ NO TASK WITHOUT AN OWNER, THE TESTS IT MUST MAKE PASS, AND WHAT DONE MEANS
 
 ## Process
 
-1. **Start from the agreed brief** (`legal-matter-brief`). No agreed brief: that skill comes first.
-   - You may show the provisional task order beside the draft brief, headings and gates only, the Clock line on top, so the user sees what each answer unlocks. Say "plan follows once the brief is agreed". Self-review items 1 and 3 apply to it, and every date in it is recomputed from scratch in a separate pass before it is shown.
+1. **Start from the brief.** No brief: `legal-matter-brief` first.
    - Plain labels for gates ("Renewal notice deadline"), never codes; the Wittgenstein version and skill names stay exact.
    - A planning question that would change a test goes back to the brief; the plan never settles it silently.
 2. **Check scope.** Independent matters (separate deals, or documents with no mechanism in common) get one plan each.
@@ -34,10 +33,10 @@ NO TASK WITHOUT AN OWNER, THE TESTS IT MUST MAKE PASS, AND WHAT DONE MEANS
 
 ## Order
 
-0. **Clocks.** Each clock that could run before the work finishes (notice, renewal or option window; limitation; filing) sits above Task 1, worked out as `legal-matter-brief` (Relevant Date and Clocks) sets out and recomputed from scratch, with the tasks that cannot finish before it.
+0. **Clocks.** Each clock that could run before the work finishes (notice, renewal or option window; limitation; filing) sits above Task 1, carried from the brief's Clock line (`legal-matter-brief`, Relevant Date and Clocks), with the tasks that cannot finish before it.
 1. **Wittgenstein version first** (`legal-wittgenstein`) of each key document, usually commissioned at the brief. The plan cites its path and never writes its own restatement. Until it returns, mark it commissioned, not done, and list its Open points with their clauses quoted once, not paraphrased; later mentions cite the clause. Each Open point goes to the tasks whose tests turn on it; those tests wait for the clarified term.
-2. **Gates early.** Client decisions, missing documents, and unconfirmed facts are asked for now; each holds back only the cards that need it, not the whole task. Every Not-supplied document is a gate in the Needs of each task whose clauses refer to it or whose cards could turn on what it may contain (services, deliverables, dates, payments), described as "may contain", never as what it says, its cards graded as `legal-test-driven-work` sets out, and drafting that turns on it waits until it arrives or the client confirms it cannot be had. For a document that may be in force, the facts `legal-matter-brief` records under Relevant Date are gates; "none referenced" is not "none exist". Silence is not a fact: a topic the deal may involve that the document never mentions (personal data in an analytics deal) is Unknown and a gate, never a default; its craft is staffed only as `legal-craft-delegation` allows for an inferred trigger, otherwise listed as Not staffed with the fact that would trigger it. A value only the client can supply stays bracketed ("[Delivery Date]"), and the task names who supplies it and which cards stay Blocked until then.
-3. **Research before the law rows it feeds** (`legal-authority-research`). No governing law in the file (`legal-matter-brief` step 2) is an early gate; every law row stays Blocked until then. The plan never chooses a governing law; one the user asks to assume is labeled "Assumed at user's request: [law]" on every row it touches. Where choosing the law is part of the objective, a craft-owned task sets out each candidate and the cards it passes and fails before the client gate (where the other side must agree, the client chooses only what to propose); law rows run per candidate, labeled with it, and all rerun once the law is chosen as the document requires.
+2. **Gates early.** Client decisions, missing documents, and unconfirmed facts are asked for now; each holds back only the cards that need it. Every Not-supplied document is a gate in the Needs of each task whose clauses refer to it or whose cards could turn on what it may contain (see No Placeholders), and drafting that turns on it waits until it arrives or the client confirms it cannot be had. For a document that may be in force, the facts `legal-matter-brief` records under Relevant Date are gates; "none referenced" is not "none exist". Silence is not a fact: a topic the deal may involve that the document never mentions is Unknown and a gate, never a default; its craft is staffed as `legal-craft-delegation` step 3 sets out. For a value only the client can supply, the task names who supplies it and which cards stay Blocked until then.
+3. **Research before the law rows it feeds** (`legal-authority-research`). No governing law in the file (`legal-matter-brief` step 2) is an early gate; every law row stays Blocked until then. The plan never chooses a governing law; one the user asks to assume is labeled as `legal-authority-research` step 2 sets out. Where choosing the law is part of the objective, a craft-owned task sets out each candidate and the cards it passes and fails before the client gate (where the other side must agree, the client chooses only what to propose); law rows run per candidate, labeled with it, and all rerun once the law is chosen as the document requires.
 4. **Clause-family tasks,** each after everything in its Needs. Independent tasks run in parallel.
 5. **Assemble and harmonize** (the parent): definitions, cross-references, precedence, and survival across families without moving a position. Rerun the affected cards. Commission the Wittgenstein version of the final text.
 6. **Independent run:** a fresh-context opposing reader runs the whole suite (`requesting-legal-review`); failures go back to the owning craft (`receiving-legal-review`).
@@ -74,7 +73,7 @@ NO TASK WITHOUT AN OWNER, THE TESTS IT MUST MAKE PASS, AND WHAT DONE MEANS
 - [ ] Missing cards, all three sources
 - [ ] RED, quoting the clause
 - [ ] GREEN for each Fail
-- [ ] VERIFY, their reading included
+- [ ] GREEN check, their reading included
 - [ ] REFACTOR; rerun touched cards
 ```
 
@@ -101,8 +100,6 @@ Plan failures; never write them:
 4. **Order:** as in Order, 0 to 7; no card before its gate.
 
 ## Handoff
-
-`executing-legal-work-plans` runs the plan task by task with checkpoints, dispatching the owning crafts through `legal-craft-delegation`, every independent task in the same turn.
 
 **When told to skip the plan or its review,** write the plan anyway, as short as the work allows, in the same reply. Start only what needs no plan (the Wittgenstein version, the Clocks, the gate questions) while the fresh-context review runs. Drafting starts when the review passes, without waiting for the user's approval. Speed changes the plan's length, never whether it exists. A decision the user defers ("governing law at the end") becomes a gate: say in one line which cards wait on it, and plan the work that does not.
 
@@ -151,5 +148,3 @@ SaaS subscription renewal, acting for the customer; the agreement names no gover
 | 6. Assemble, harmonize; Wittgenstein version of the final text | Parent | 3, 4, 5 |
 | 7. Independent run (`requesting-legal-review`); failures to the owning craft (`receiving-legal-review`) | Fresh-context opposing reader | 6 |
 | 8. Verify | `legal-verification-before-completion` | 7 |
-
-Tasks 1 and 2 start at once; 3 and 5 run in parallel after 1; task 4 waits for the breach cap in task 3.

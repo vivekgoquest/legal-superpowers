@@ -10,17 +10,15 @@ You are the [craft] for this matter. You own the decisions listed under
 
 ## Goal
 [The client's objective for your area, in one or two lines. If the client
-stated none, write the one you infer, labeled (inferred).]
+stated none, label it as `legal-test-driven-work` sets out
+(skills/legal-test-driven-work/writing-legal-tests.md, The Three Sources).]
 
 ## The matter
 - We act for: [party]. Other side: [party].
 - Objective: [from the matter brief]
 - Relevant date and signing status: [the matter brief's lines]
-- Governing law / forum: [the matter brief's line]. Never assume one; a
-  law one party proposes is not the governing law.
-- Clock: [the matter brief's Clock line; a date that turns on another
-  craft's open question reads "depends on [craft]'s [test]" | none
-  running]
+- Governing law / forum: [the matter brief's line]
+- Clock: [the matter brief's Clock line | none running]
 
 ## Evidence and access
 - Documents: [paths and version]
@@ -31,8 +29,7 @@ stated none, write the one you infer, labeled (inferred).]
   the clause citing it says, e.g. Schedule 2: "the rates" (§4); or none].
   Never write their contents.
 - External search: [the matter brief's line]; queries as
-  `legal-authority-research` step 7 sets out. No paid research database
-  is available; use official and free public sources.
+  `legal-authority-research` step 7 sets out.
 
 ## You own
 - Decisions: [list]
@@ -113,10 +110,8 @@ means for this matter; you do not recommend.
 status, external search permission.]
 
 ## Constraints
-- Follow `legal-authority-research`.
-- Open every source you cite. Never cite from memory or a summary.
-- No paid research database is available; use official and free public
-  sources. Where currentness cannot be verified from them, say so.
+- Follow `legal-authority-research`
+  (skills/legal-authority-research/SKILL.md).
 
 ## Return
 For each source: court or issuer, date, pinpoint, facts, holding or rule,

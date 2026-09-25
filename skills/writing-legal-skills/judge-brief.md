@@ -28,10 +28,8 @@ Your job is to find where this run fails.
    work-product check in skills/legal-verification-before-completion/SKILL.md,
    and grade rows as skills/legal-test-driven-work/SKILL.md sets out? Any
    assumed jurisdiction? Any confidential fact sent to an external search
-   without permission? Any caption or cover-page label read as settling
-   what its clause does, or dismissed where another clause gives it
-   effect? Does the expected behavior cover every clause the material
-   links to the ones it quotes?
+   without permission? Does the expected behavior cover every clause the
+   material links to the ones it quotes?
 5. Record: are findings rows of one test table, with no separate issues
    list or ledger? Does document work include a Wittgenstein version?
    Does every label and field value match the skill that owns it?
@@ -58,9 +56,7 @@ Your job is to find where it fails the party it was done for.
 ## The run
 - Agreement: [corpus path]. Read its header comment first: it records the
   source, the conversion, and redactions made in the source. A redaction
-  or blank marked there is not a drafting gap. A published default
-  selection kept there (a pre-checked "[ x ]") applies if kept: neither a
-  blank nor agreed.
+  or blank marked there is not a drafting gap.
 - We act for: [party] against [party]. Objective: [...]
 - Skill under test: [path]
 - Output: [path]
@@ -70,12 +66,10 @@ Your job is to find where it fails the party it was done for.
    our party's objective? Name any that helps the other side or leaves
    our party worse off.
 2. Invention: does the output meet every work-product check in
-   skills/legal-verification-before-completion/SKILL.md? Any caption or
-   cover-page label read as settling what its clause does, or dismissed
-   where another clause gives it effect? Any fact, term, exhibit content,
-   citation, or governing law not in the agreement or verified? Any
-   redaction filled in, or published default treated as blank or as
-   agreed?
+   skills/legal-verification-before-completion/SKILL.md? Any fact, term,
+   exhibit content, citation, or governing law not in the agreement or
+   verified? Any redaction filled in, or published default treated as
+   blank or as agreed?
 3. Coverage: which mechanism that matters to our party got no test?
    Absence counts: a topic the deal needs that the agreement omits.
 4. Law: governing law taken from a cited clause, or marked Unknown? Law

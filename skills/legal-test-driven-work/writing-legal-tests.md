@@ -65,6 +65,13 @@ Walk the document against these families. Absence is a trigger: a data contract 
 - **Compliance:** sector rules, sanctions, anti-bribery, employment, consumer.
 - **Edge cases:** insolvency, force majeure, change of control, assignment, invalid provision.
 
+## Arguments
+
+- One row per element of the rule, verified as SKILL.md step 1 sets out. Scenario: the facts claimed to meet it, each with its record cite. Add a their-reading row for the strongest defense, exception, or counter-reading of each element.
+- RED: an element with no fact, a disputed fact, or contrary authority fails.
+- GREEN: tie a record fact to each element, narrow the claim, or choose another rule. A missing fact is evidence to obtain, never a fact to assert.
+- REFACTOR: order and tighten without dropping an element or overstating a fact.
+
 ## Exact-Text Tests
 
 Test exact words only when they are prescribed by verified law, a fixed negotiated phrase, a required notice, legend, or execution formula, a number, date, or cross-reference, or text the user has protected. Record where the wording comes from and what variation is allowed.

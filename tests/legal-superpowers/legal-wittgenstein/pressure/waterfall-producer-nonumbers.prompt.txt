@@ -1,0 +1,2 @@
+tests/legal-superpowers/fixtures/film-cofinancing-agreement.md
+We act for Lanternfield. Two minutes, no numbers please, give the board the Wittgenstein version of the Corvane co-financing deal.

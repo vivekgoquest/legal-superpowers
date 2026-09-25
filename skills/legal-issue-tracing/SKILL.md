@@ -51,7 +51,7 @@ Write the chain in one line: scenario → deciding text → what it depends on �
 
 Compare with something in the file that passes a similar test, or the same mechanism in another supplied document. List every difference, however small, and claim for the comparison only what its text shows.
 
-Several rows failing? Look first for a shared link: one undefined word or one missing exhibit can fail ten rows. Independent traces can run as parallel subagents; there is no cap.
+Several rows failing? Look first for a shared link: one undefined word or one missing exhibit can fail ten rows. Independent traces can run as parallel subagents.
 
 ### 3. Test one hypothesis
 
@@ -79,19 +79,19 @@ An illustration never enters the document, an Evidence cell, or the Wittgenstein
 
 Causes can stack. Record each with its own evidence, the most upstream first.
 
-- No choice of law in the file: `legal-authority-research` step 2 (a Fail row and an applicable-law row; never "nothing to research"). A row a clause could decide on the text is a drafting row (`legal-test-driven-work`, Text, not law).
+- No choice of law in the file: `legal-authority-research` step 2. A row a clause could decide on the text is a drafting row (`legal-test-driven-work`, Text, not law).
 - A test the text cannot pass is not a wrong test; it is doing its job.
 - Text that works as the parties wrote it but gives the client less than its objective is not a drafting gap. It is a negotiated position, and goes to the user.
 - A finding with no clause, fact, or authority behind it is traced: supported with a cite, or corrected as a wrong test with the reason.
 
 ### 5. Record in the row and hand back
 
-The trace lives in the failing row; keep no separate diagnosis memo, log, or issues list. Lead the reply with the cause in plain words, whether the user's own row passes once the fix is in (and what keeps it open), and the owner; then the working, once, one line per step as in the Example, with the links checked in the row's Evidence cell, not in prose; then deliver as `legal-matter-brief` sets out (Delivery order). The Result cell holds one or two lines:
+The trace lives in the failing row; keep no separate diagnosis memo, log, or issues list. The links checked go in the row's Evidence cell. Deliver as `legal-matter-brief` sets out (Delivery order); the row's Result cell carries the cause, and the fix is the deliverable. The Result cell holds one or two lines:
 
 `Fail. Cause ([class]; confirmed, or probable (text-level) pending [what confirms it]): [chain with cites]. Tried: [patch], cannot flip because [what it cannot do on the text]. Fix at: [source clause or document]. Owner: [craft].`
 
 - **Fix at the source of the cause, not where the failure shows.** The owner drafts it through `legal-test-driven-work` steps 3 to 5 (options where the brief gave no position, rows on the fix's own words and every linked clause, the run label) and refreshes the Wittgenstein version for the proposed text through `legal-wittgenstein`, brackets kept.
-- You own the fix (a single-craft matter, or the user asked you for the text)? Draft it in the same reply; the trace leads the reply, it is not where it stops. Where a Not-supplied document may hold the answer, still draft the options, labeled fallbacks; the row stays Fail until the document arrives. The independent run (`requesting-legal-review`) and `legal-verification-before-completion` still follow.
+- You own the fix (a single-craft matter, or the user asked you for the text)? Draft it in the same reply. Where a Not-supplied document may hold the answer, still draft the options, labeled as a proposal (`legal-matter-brief` step 2); the row stays Fail until the document arrives. The independent run (`requesting-legal-review`) and `legal-verification-before-completion` still follow.
 - A new failure the trace uncovered becomes a new row with its own owner. A row whose scenario needs text that does not exist yet (a deadline the fix will set) is tied to that fix and run after it, not scored now.
 
 ### 6. When a fix fails
@@ -130,7 +130,7 @@ The trace lives in the failing row; keep no separate diagnosis memo, log, or iss
 | "Just one more version." | After three failed fixes the structure is the problem. Another wording is the same guess. |
 | "The test is wrong; change it." | Only a wrong fact, wrong authority, misread text, or the client's own change of objective makes a test wrong. |
 | "The patch is harmless; leave it in." | Untested text is not harmless. Take it out or test it. |
-| "They asked for wording, not a diagnosis." | They asked for a Pass. The trace takes a few lines and leads the reply; the wording that follows goes at the source. |
+| "They asked for wording, not a diagnosis." | They asked for a Pass. The trace takes a few lines, in the row; the wording goes at the source. |
 
 ## Example
 

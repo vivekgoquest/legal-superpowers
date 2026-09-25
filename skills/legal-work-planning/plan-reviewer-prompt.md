@@ -8,7 +8,7 @@ files below. Do not execute the plan, change any document, write tests,
 or draft clause text.
 
 Plan: [path]
-Agreed brief: [path]
+Brief: [path]
 Test table: [path]
 Staffing table: [path, or "in the plan"]
 Documents: [paths and versions]
@@ -21,8 +21,9 @@ Check:
    brief maps to a task and its cards. Nothing outside the brief; gaps
    noticed outside it are listed in one line, not planned.
 2. Tests. Every task cites card IDs that exist in the test table, and each
-   mechanism will get cards from all three sources: the law, our
-   objective, their reading. A card on an open-ended word waits for the
+   mechanism will get cards from each source that bears on it (the law,
+   our objective, their reading), and the suite at least one from their
+   reading. A card on an open-ended word waits for the
    Wittgenstein version to clarify it.
 3. Ownership. Every clause-family or research task has exactly one
    owning craft from the staffing table (clock, Wittgenstein, assembly,
@@ -30,11 +31,9 @@ Check:
    and every decision sits in one task. No one grades a clause
    they drafted.
 4. Order. Each clock that could run before the work finishes sits
-   above Task 1 and meets the Clock rules: recompute every date; both
-   paths given; none called safe or option-preserving; live until the
-   document is confirmed never in force or ended, or the other side
-   has given its own notice. The Wittgenstein version comes
-   first among tasks, from `legal-wittgenstein`, cited by path and
+   above Task 1 and meets the Clock rules (path above). The
+   Wittgenstein version comes first among tasks, from
+   `legal-wittgenstein`, cited by path and
    marked commissioned until it returns; the plan writes no
    restatement of its own and quotes flagged clauses rather than
    paraphrasing them. Client decisions, missing documents, and unconfirmed facts are
@@ -51,9 +50,8 @@ Check:
 6. Accuracy. The plan invents no governing law, fact, clause, definition,
    exhibit content, or authority. A document not supplied stays Not
    supplied and is in the Needs of every task whose clauses refer to it
-   or whose cards could turn on what it may contain (services,
-   deliverables, dates, payments), its cards graded by the grading
-   rules above. The plan contains no
+   or whose cards could turn on what it may contain, its cards graded
+   by the grading rules above. The plan contains no
    clause text. Every external search keeps to the brief's limit.
 7. Executability. No placeholders ("review X", "as appropriate",
    "standard language", "TBD", "similar to Task N"). Every task has a

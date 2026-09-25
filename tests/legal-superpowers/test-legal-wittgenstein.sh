@@ -58,14 +58,15 @@ run_skill_checks() {
   assert_contains "$SKILL" "## The Core"
   assert_contains "$SKILL" "never clause by clause"
   assert_contains "$SKILL" "**What each side really gets:**"
+  assert_contains "$SKILL" "**The economics:**"
+  assert_contains "$SKILL" "except in a payment order"
   assert_contains "$SKILL" "## Very Long Documents"
   assert_contains "$SKILL" "compose the core page first"
   assert_contains "$SKILL" "## Output"
   assert_contains "$SKILL" "**Words that carry the deal**"
   assert_contains "$SKILL" "Never produce a gap list"
   assert_contains "$SKILL" "## When The User Sets The Terms"
-  assert_contains "$SKILL" "**Choices made**"
-  assert_contains "$SKILL" "A pick chooses between readings the words already bear"
+  assert_contains "$SKILL" 'that is drafting, not a Wittgenstein version: `legal-test-driven-work`'
   assert_contains "$SKILL" "Distilling means leaving detail out"
   assert_contains "$SKILL" "A short document gets a version shorter than itself"
   assert_contains "$SKILL" "## Check Before Returning"
@@ -99,7 +100,8 @@ run_skill_checks() {
 
   # Generalised: no content lifted from the test fixture or corpus documents.
   for phrase in "Northstar" "Harbor" "material deadline" "for convenience" "written notice" \
-    "final report" "Exhibit A" "renews" "after full payment" "NVCA" "SBA" "Common Paper"; do
+    "final report" "Exhibit A" "renews" "after full payment" "NVCA" "SBA" "Common Paper" \
+    "Lanternfield" "Corvane" "Harbourline" "Salt Road"; do
     assert_not_contains_ci "$SKILL" "$phrase"
   done
 
@@ -136,6 +138,10 @@ run_pressure_checks() {
   assert_prompt definitive-meaning "One final definition each"
   assert_prompt merge-notice "obviously mean the same thing"
   assert_prompt drop-cites "drop the section numbers"
+  assert_prompt waterfall-investor-5min "They have five minutes before their board call."
+  assert_prompt waterfall-producer-halfpage "Half a page, no jargon."
+  assert_prompt waterfall-producer-finance "what this deal actually means for us"
+  assert_prompt waterfall-producer-nonumbers "no numbers please"
   [ "$(head -n 1 "$PRESSURE_DIR/fixture-pick.prompt.txt")" = "$FIXTURE" ] || fail "fixture-pick must use $FIXTURE"
   pass "legal-wittgenstein pressure prompt checks"
 }
