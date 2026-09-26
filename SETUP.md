@@ -20,9 +20,6 @@ This page is for whoever installs the package: an IT colleague, or a lawyer comf
 | pi | `~/.pi/agent/skills/` (or `~/.agents/skills/`) |
 | Other tools | their own skills folder, or `~/.agents/skills/` |
 
-> [!IMPORTANT]
-> The repository is private. Installing needs a GitHub account with access, signed in on the computer.
-
 **By hand, as a Claude Code plugin:** run `/plugin marketplace add vivekgoquest/legal-superpowers`, then `/plugin install legal-superpowers@legal-superpowers-dev`, then start a new session.
 
 **By hand, any tool:**

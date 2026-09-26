@@ -151,8 +151,7 @@ Install the Legal Superpowers skills for me. Change nothing else on my computer.
 
 1. Get the package. If ~/legal-superpowers already exists, run: git -C ~/legal-superpowers pull
    Otherwise run: git clone https://github.com/vivekgoquest/legal-superpowers.git ~/legal-superpowers
-   If that fails for lack of access, try: gh repo clone vivekgoquest/legal-superpowers ~/legal-superpowers
-   If both fail, stop and tell me I need access to the private GitHub repository and must be signed in to GitHub.
+   If that fails, stop and tell me why in plain words.
 2. Work out which AI tool you are running in, and use its personal skills folder:
    Claude Code: ~/.claude/skills. Codex: ~/.codex/skills. pi: ~/.pi/agent/skills.
    Any other tool: the folder where it loads personal skills (folders that contain a SKILL.md); if it has none, use ~/.agents/skills and tell me.
@@ -160,8 +159,6 @@ Install the Legal Superpowers skills for me. Change nothing else on my computer.
 4. Check the result: run bash ~/legal-superpowers/tests/legal-superpowers/test-skills.sh and confirm that all 12 skills are in the skills folder, each with a SKILL.md.
 5. Tell me in plain words what you installed and where, and that I must start a new session to use it.
 ```
-
-You need access to this private GitHub repository, and to be signed in to GitHub on your computer.
 
 ### How to brief it
 
@@ -289,4 +286,6 @@ Yes. For an argument, the "what if" questions are the elements of the legal rule
 
 ## 7. Credits
 
-This package began as an adaptation of Superpowers by Jesse Vincent and Prime Radiant, which brought the same checklist-first discipline to software. It is released under the MIT Licence in [`LICENSE`](LICENSE).
+This package began as an adaptation of Superpowers by Jesse Vincent and Prime Radiant, which brought the same checklist-first discipline to software. It is released under the MIT Licence in [`LICENSE`](LICENSE): anyone may use, copy, change and share it, including commercially, as long as the licence notice stays with it.
+
+The sample agreements in `tests/legal-superpowers/corpus/` are third-party documents used for testing. They are not covered by the MIT Licence; each keeps its own terms, recorded in its header and in the [corpus README](tests/legal-superpowers/corpus/README.md).
