@@ -37,7 +37,7 @@ Every piece of work on a legal document also produces a **Wittgenstein version**
 
 ## Install
 
-- **Claude Code:** add this repository as a plugin marketplace (`/plugin marketplace add vivekgoquest/obra-superpowers-legal`), then install `legal-superpowers`.
+- **Claude Code:** add this repository as a plugin marketplace (`/plugin marketplace add vivekgoquest/legal-superpowers`), then install `legal-superpowers`.
 - **Codex and other harnesses:** point the harness at the `skills/` folder, for example by symlinking each skill folder into `~/.codex/skills/`.
 
 ## Testing
@@ -51,4 +51,4 @@ These scripts check structure only. `bash tests/legal-superpowers/test-triggerin
 
 ## Attribution
 
-This repository began as a fork of [obra/superpowers](https://github.com/obra/superpowers) by Jesse Vincent and Prime Radiant, and remains under the MIT License in `LICENSE`.
+This repository began as a fork of Superpowers by Jesse Vincent and Prime Radiant, and remains under the MIT License in `LICENSE`.

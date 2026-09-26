@@ -2,7 +2,7 @@
 
 **Date:** 2026-05-11
 **Status:** Draft for user review
-**Repo:** `obra-superpowers-legal`
+**Repo:** `legal-superpowers`
 
 ## Purpose
 

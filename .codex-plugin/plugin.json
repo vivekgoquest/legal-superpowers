@@ -6,8 +6,8 @@
     "name": "Vivek Lath",
     "url": "https://github.com/vivekgoquest"
   },
-  "homepage": "https://github.com/vivekgoquest/obra-superpowers-legal",
-  "repository": "https://github.com/vivekgoquest/obra-superpowers-legal",
+  "homepage": "https://github.com/vivekgoquest/legal-superpowers",
+  "repository": "https://github.com/vivekgoquest/legal-superpowers",
   "license": "MIT",
   "keywords": [
     "legal",
@@ -35,7 +35,7 @@
       "We act for the buyer. Review this agreement test-first and redline it.",
       "Give me the Wittgenstein version of this agreement."
     ],
-    "websiteURL": "https://github.com/vivekgoquest/obra-superpowers-legal",
+    "websiteURL": "https://github.com/vivekgoquest/legal-superpowers",
     "privacyPolicyURL": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
     "termsOfServiceURL": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
     "brandColor": "#0F766E",
