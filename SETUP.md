@@ -30,6 +30,8 @@ mkdir -p ~/.codex/skills   # or the tool's folder from the table above
 for d in ~/legal-superpowers/skills/*/; do ln -s "$d" ~/.codex/skills/; done
 ```
 
+**claude.ai and ChatGPT downloads:** `scripts/package-skills.sh` builds them into `dist/` (one ZIP per skill for claude.ai, flat renamed files plus project instructions for ChatGPT). `.github/workflows/skill-bundles.yml` reruns it on every change to `skills/` and republishes the [`skills` release](https://github.com/vivekgoquest/legal-superpowers/releases/tag/skills), so the README's download links always serve the current skills.
+
 **Check it works:** ask for *"the Wittgenstein version of this agreement"* with any contract attached. A reply organised around "the deal", "who must do what", "the economics" and "what each side really gets" means the skills loaded.
 
 ## The 12 skills
@@ -71,6 +73,8 @@ legal-superpowers/
 ├── docs/legal-superpowers/specs/ Design documents; the goal document is the one in force
 ├── .claude-plugin/ .codex-plugin/ .cursor-plugin/   Install details per harness
 ├── scripts/bump-version.sh       Updates the version in every install file at once
+├── scripts/package-skills.sh     Builds the claude.ai and ChatGPT downloads (see Install)
+├── .github/workflows/            Rebuilds and publishes those downloads when the skills change
 ├── CLAUDE.md                     Instructions for an agent working on this repository (AGENTS.md links to it)
 └── LICENSE                       MIT
 ```

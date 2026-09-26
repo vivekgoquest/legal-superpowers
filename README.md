@@ -9,7 +9,7 @@ AI assistants can review and draft in minutes. They can also sound certain while
 1. [**It writes the checklist before it touches the document.**](#1-it-writes-the-checklist-before-it-touches-the-document) Every clause is tested against "what if" questions drawn from the law, your client's objective, and the other side's reading.
 2. [**It answers first, and keeps facts, gaps, proposals and your decisions apart.**](#2-it-answers-first-and-keeps-facts-gaps-proposals-and-your-decisions-apart) You see the answer, then what it rests on, what is missing, and what only you can decide.
 3. [**It will not invent, assume the governing law, or mark its own work.**](#3-it-will-not-invent-assume-the-governing-law-or-mark-its-own-work) Every point cites its clause or source, and anything unverified stays visibly open.
-4. [**Starting takes one pasted message and a brief in plain English.**](#4-starting-takes-one-pasted-message-and-a-brief-in-plain-english) No technical knowledge is needed.
+4. [**You can use it on your computer, in claude.ai or in ChatGPT, and you brief it in plain English.**](#4-you-can-use-it-on-your-computer-in-claudeai-or-in-chatgpt-and-you-brief-it-in-plain-english) No technical knowledge is needed.
 
 Reference: [Words you will see](#5-words-you-will-see-in-replies) · [Questions lawyers ask](#6-questions-lawyers-ask) · [Technical setup (SETUP.md)](SETUP.md)
 
@@ -140,11 +140,20 @@ An illustration, based on the sample agreement (shortened):
 
 ---
 
-## 4. Starting takes one pasted message and a brief in plain English
+## 4. You can use it on your computer, in claude.ai or in ChatGPT, and you brief it in plain English
+
+### Choose where to use it
+
+| Where | What you need | How fully it runs |
+|---|---|---|
+| **An AI tool on your computer** (Claude Code, Codex, pi) | Paste one install message, once | Fully: specialists and the second reviewer run as separate AI sessions |
+| **claude.ai** (in the browser) | Any Claude plan, with "Code execution and file creation" turned on | The skills load properly. The chat may not be able to start a separate reviewer; when it cannot, the check is still done and labelled "not independent" |
+| **ChatGPT Business, Enterprise or Edu** | Your workspace must allow skills | OpenAI supports uploaded skills on these plans. Not yet tested with this package |
+| **ChatGPT Plus or Pro** | A ChatGPT Project | The weakest option: the files are reference material the chat reads, not installed skills, so it may skip steps more often |
 
 ### Install: paste one message
 
-Open your AI coding tool (Claude Code, Codex, pi or similar), paste the message below, and press Enter. The tool downloads the package, installs it and checks it. When it says it has finished, start a new session. To update later, paste the same message again.
+Use this for an AI tool on your computer. Open your AI coding tool (Claude Code, Codex, pi or similar), paste the message below, and press Enter. The tool downloads the package, installs it and checks it. When it says it has finished, start a new session. To update later, paste the same message again.
 
 ```text
 Install the Legal Superpowers skills for me. Change nothing else on my computer.
@@ -159,6 +168,29 @@ Install the Legal Superpowers skills for me. Change nothing else on my computer.
 4. Check the result: run bash ~/legal-superpowers/tests/legal-superpowers/test-skills.sh and confirm that all 12 skills are in the skills folder, each with a SKILL.md.
 5. Tell me in plain words what you installed and where, and that I must start a new session to use it.
 ```
+
+### Use it in claude.ai
+
+1. In claude.ai, open **Settings → Capabilities** and turn on **Code execution and file creation**.
+2. Download [**legal-superpowers-for-claude-ai.zip**](https://github.com/vivekgoquest/legal-superpowers/releases/download/skills/legal-superpowers-for-claude-ai.zip) and double-click it. You get 12 smaller ZIP files, one per skill.
+3. In claude.ai, open **Customize → Skills** and upload each of the 12 ZIP files. claude.ai takes one skill per ZIP file.
+4. Start a new chat, attach your document, and ask in the usual way.
+
+On a Team or Enterprise plan, an owner must first turn on code execution and skills in **Organization settings → Plugins & skills**, and can add the skills for everyone in the organisation. Source: [Anthropic, "Using skills in Claude"](https://support.claude.com/en/articles/12512180-using-skills-in-claude).
+
+### Use it in ChatGPT
+
+**Business, Enterprise or Edu:** OpenAI's help page describes uploading skills under **Plugins → Skills → Create → Upload from your computer**, and workspace admins can publish skills for everyone ([OpenAI, "Skills in ChatGPT"](https://help.openai.com/en/articles/20001066-skills-in-chatgpt)). Try uploading the 12 ZIP files from the claude.ai download above. OpenAI does not publish the exact file format, and this package has not yet been tested there.
+
+**Plus or Pro (personal accounts):** OpenAI documents no skills upload for these plans, so use a Project instead:
+
+1. Download [**legal-superpowers-for-chatgpt.zip**](https://github.com/vivekgoquest/legal-superpowers/releases/download/skills/legal-superpowers-for-chatgpt.zip) and double-click it.
+2. In ChatGPT, create a new **Project**.
+3. Add the 17 `.md` files as project files. ChatGPT takes up to 10 at a time, so add them in two batches. Plus allows 25 files per project and Pro 40; the Free plan's limit of 5 is too small.
+4. Open **Project settings → Instructions** and paste the text of `PROJECT-INSTRUCTIONS.txt` from the same download.
+5. Start chats inside that Project.
+
+Plan limits come from [OpenAI, "Projects in ChatGPT"](https://help.openai.com/en/articles/10169521-projects-in-chatgpt).
 
 ### How to brief it
 

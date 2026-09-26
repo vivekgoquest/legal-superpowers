@@ -6,3 +6,4 @@
 tests/legal-superpowers/corpus/vc-shareholders/swiggy-bundl-sha-2021-series-i2-i3-j.md
 tests/legal-superpowers/corpus/vc-shareholders/nvca-model-*.md
 tests/legal-superpowers/corpus/saas/gitlab-subscription-agreement-v8.md
+dist/

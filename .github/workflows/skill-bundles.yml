@@ -1,0 +1,28 @@
+name: Skill bundles
+
+# Rebuild the claude.ai and ChatGPT downloads whenever the skills change,
+# and publish them to the "skills" release.
+on:
+  push:
+    branches: [main]
+    paths: ['skills/**', 'scripts/package-skills.sh', '.github/workflows/skill-bundles.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  bundle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: bash scripts/package-skills.sh
+      - name: Publish to the skills release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete skills --cleanup-tag --yes || true
+          gh release create skills --target "$GITHUB_SHA" \
+            --title "Skill downloads for claude.ai and ChatGPT" \
+            --notes "Built automatically from skills/ on every change. How to use them: see the README." \
+            dist/legal-superpowers-for-claude-ai.zip dist/legal-superpowers-for-chatgpt.zip
