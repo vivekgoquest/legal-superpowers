@@ -4,8 +4,29 @@
 
 You do not need to know anything about AI to use it. You ask in ordinary words, the way you would brief a junior colleague.
 
+## Install: paste one message
+
+Open your AI coding tool (Claude Code, Codex, pi or similar), paste the message below, and press Enter. The tool downloads the package, installs it and checks it. When it says it has finished, start a new session.
+
+```text
+Install the Legal Superpowers skills for me. Change nothing else on my computer.
+
+1. Get the package. If ~/legal-superpowers already exists, run: git -C ~/legal-superpowers pull
+   Otherwise run: git clone https://github.com/vivekgoquest/legal-superpowers.git ~/legal-superpowers
+   If that fails for lack of access, try: gh repo clone vivekgoquest/legal-superpowers ~/legal-superpowers
+   If both fail, stop and tell me I need access to the private GitHub repository and must be signed in to GitHub.
+2. Work out which AI tool you are running in, and use its personal skills folder:
+   Claude Code: ~/.claude/skills. Codex: ~/.codex/skills. pi: ~/.pi/agent/skills.
+   Any other tool: the folder where it loads personal skills (folders that contain a SKILL.md); if it has none, use ~/.agents/skills and tell me.
+3. Create that folder if it does not exist. For each folder inside ~/legal-superpowers/skills/, create a symbolic link with the same name in the skills folder, pointing to it (on Windows, copy the folder instead). If something with that name is already there and is not a link to ~/legal-superpowers/skills/, leave it alone and tell me.
+4. Check the result: run bash ~/legal-superpowers/tests/legal-superpowers/test-skills.sh and confirm that all 12 skills are in the skills folder, each with a SKILL.md.
+5. Tell me in plain words what you installed and where, and that I must start a new session to use it.
+```
+
+To update later, paste the same message again.
+
 > [!NOTE]
-> This guide is for lawyers and legal teams. Whoever installs it on your computer should read [SETUP.md](SETUP.md).
+> This guide is for lawyers and legal teams. Technical details are in [SETUP.md](SETUP.md).
 
 ## Contents
 
@@ -265,7 +286,7 @@ Yes. For an argument, the "what if" questions are the elements of the legal rule
 <details>
 <summary><b>Who sets it up?</b></summary>
 
-Anyone comfortable installing software; the steps are in [SETUP.md](SETUP.md). It works with several AI tools, including Claude Code, Codex and pi.
+You can: paste the message in [Install](#install-paste-one-message) into your AI tool and it installs itself. It works with Claude Code, Codex, pi and other AI coding tools. You need access to the private GitHub repository.
 
 </details>
 

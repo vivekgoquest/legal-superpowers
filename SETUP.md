@@ -11,42 +11,29 @@ This page is for whoever installs the package: an IT colleague, or a lawyer comf
 
 ## Install
 
+**The easy way:** paste the install message from the [README](README.md#install-paste-one-message) into Claude Code, Codex, pi or another AI coding tool. It clones the repository to `~/legal-superpowers`, links each skill folder into the tool's personal skills folder, and runs the structure check. Pasting it again updates the package.
+
+| Tool | Personal skills folder it uses |
+|---|---|
+| Claude Code | `~/.claude/skills/` |
+| Codex | `~/.codex/skills/` |
+| pi | `~/.pi/agent/skills/` (or `~/.agents/skills/`) |
+| Other tools | their own skills folder, or `~/.agents/skills/` |
+
 > [!IMPORTANT]
 > The repository is private. Installing needs a GitHub account with access, signed in on the computer.
 
-### Claude Code
+**By hand, as a Claude Code plugin:** run `/plugin marketplace add vivekgoquest/legal-superpowers`, then `/plugin install legal-superpowers@legal-superpowers-dev`, then start a new session.
 
-1. Open Claude Code.
-2. Run `/plugin marketplace add vivekgoquest/legal-superpowers`.
-3. Run `/plugin install legal-superpowers@legal-superpowers-dev`.
-4. Start a new session.
-
-### Codex
+**By hand, any tool:**
 
 ```bash
 git clone https://github.com/vivekgoquest/legal-superpowers.git ~/legal-superpowers
-mkdir -p ~/.codex/skills
+mkdir -p ~/.codex/skills   # or the tool's folder from the table above
 for d in ~/legal-superpowers/skills/*/; do ln -s "$d" ~/.codex/skills/; done
 ```
 
-Then start a new Codex session.
-
-### pi
-
-Clone as for Codex, then start pi with every skill folder loaded:
-
-```bash
-args=(); for d in ~/legal-superpowers/skills/*/; do args+=(--skill "$d"); done
-pi "${args[@]}"
-```
-
-### Any other agent
-
-If the agent reads skill folders, point it at `skills/`. If not, begin the request with: *"A package of legal skills is installed at `~/legal-superpowers/skills/`: one folder per skill, each with a SKILL.md. Read each skill's description and follow every skill whose description fits."*
-
-### Check it works
-
-Ask for *"the Wittgenstein version of this agreement"* with any contract attached. A reply organised around "the deal", "who must do what", "the economics" and "what each side really gets" means the skills loaded.
+**Check it works:** ask for *"the Wittgenstein version of this agreement"* with any contract attached. A reply organised around "the deal", "who must do what", "the economics" and "what each side really gets" means the skills loaded.
 
 ## The 12 skills
 
