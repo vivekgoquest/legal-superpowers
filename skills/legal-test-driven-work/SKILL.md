@@ -107,7 +107,7 @@ Run the dependent-rows check (The Test Card) on every Pass row, then `legal-veri
 
 ## Readiness Verdicts
 
-Asked whether a document is ready, acceptable, or ready to sign for a party? The first line answers, read off the table:
+Asked whether a document is ready, acceptable, or ready to sign for a party? The verdict line answers, read off the table, and heads the record; a reply gives it as `legal-matter-brief` (Delivery order) sets out:
 
     Ready for [step]: [Yes | Not yet | No]; open: [n] Fail, [n] Partial, [n] Blocked, [n] open Pass; deciding rows: [ID] ([result]): [what turns it to Pass]; ...
 

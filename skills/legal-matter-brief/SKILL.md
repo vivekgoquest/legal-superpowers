@@ -45,9 +45,17 @@ When in doubt, write the full brief. The ratchet is one-way: if a "settled" edit
 - **Review, summary, comparison, or research:** assume neutral. Label it at the top, write objective tests for each party, name both opposing readings, and proceed.
 - **Redline, drafting choices, negotiation, or argument:** the work must push one way. Ask that single question; the document map and the Wittgenstein version can go in the same message.
 
-**Delivery order.** The record (the brief, one line per field, heading the test table) is always built in full; the reply takes the form the user asked for. Default reply, in this order: the verdict line (`legal-test-driven-work`, Readiness Verdicts); the Clock line; the ask: one line naming, by row ID, each document, fact, client decision and bracketed value an open row waits on, and each assumption the answer rests on (omit it when there is none); the deliverable; the record; the Wittgenstein version. Asked for the answer or the text alone ("just give me the clause", "skip the tests", "just tell me", "no research packet")? Every step still runs and every row is written; give the verdict line, the Clock line, the ask, the deliverable and the Wittgenstein version, then one line offering the record or giving its path.
+**Delivery order.** The record (the brief, one line per field, heading the test table and its verdict line) is always built in full and kept in its own file. The reply is written for the reader the user names, or for the user, in the form and length they asked for; unasked, it is shorter than the document it covers, not counting a deliverable's own text. Plain words, as `legal-wittgenstein` (Accuracy) sets out: sentences under about 25 words, and each term of art kept explained once. In this order:
 
-Cells and brief fields take one line each. In a delivery, staffing shows in the table's craft ID prefixes, not in a block. A draft brief sent for agreement starts at the Clock line. Nothing else: no preamble, no prose restating the table, no disclaimer or attorney-review line ("not legal advice", "for attorney review", "consult counsel").
+1. The verdict: the verdict line's answer (`legal-test-driven-work`, Readiness Verdicts) in plain words, what it rests on (defects in the text, or items the file lacks), and whether an independent run has checked it; then the points that decide it, most serious first. Counts and labels stay in the record.
+2. The clock: each Clock line cutoff still running, in plain words (omit when none runs).
+3. The ask: each document, fact, client decision and bracketed value an open row waits on, and each assumption the answer rests on, one line each (omit when there is none).
+4. The deliverable. A redline or markup opens with its list of changes, one line each with its reason, before the full wording.
+5. One line giving the paths of the record and the Wittgenstein version (no file tool: both follow, under their own headings).
+
+Every open row that bears on the objective reaches the reply as one plain line in these parts; rows that share a fix share a line. Row IDs and run labels stay out of sentences; a clause cite or row ID may close a line in brackets. "Just the clause", "skip the tests" or "just tell me" shortens the reply, never the work: every step still runs and every row is written.
+
+Cells and brief fields take one line each. In a delivery, staffing shows in the table's craft ID prefixes, not in a block. A draft brief sent for agreement starts at the Clock line. Nothing else: no preamble, no prose restating the table beyond those lines, no disclaimer or attorney-review line ("not legal advice", "for attorney review", "consult counsel").
 
 No questions is not no independent run (`requesting-legal-review`).
 

@@ -62,10 +62,10 @@ These check your own work, not the document. They are not rows. A failing check 
 Read it off the table. Never draft it before the run or from memory.
 
 ```markdown
-[Claim]: [Yes | Not yet | No | Complete | Not complete] [run label, if any]   (one line per claim asked or implied; a readiness claim is the verdict line of `legal-test-driven-work`, with no label after it)
+[Claim]: [Yes | Not yet | No | Complete | Not complete] [run label, if any]   (one line per claim asked or implied; a readiness claim is the verdict of `legal-test-driven-work`, given as `legal-matter-brief` (Delivery order) sets out, with no label after it)
 Whole suite ([N] rows) run fresh on [document, version, date] by [reviewer | its run label].
 
-[Then the rest in the delivery order of `legal-matter-brief`, from the Clock line on, with the test table as run on the final text.]
+[Then the rest in the delivery order of `legal-matter-brief`, from the clock on; the test table as run on the final text stays in the record.]
 ```
 
 **Readiness verdict.** As Readiness Verdicts in `legal-test-driven-work`. Never move a Blocked row into a footnote or general caveat. No prose that restates the table.

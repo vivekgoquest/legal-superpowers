@@ -1,0 +1,2 @@
+tests/legal-superpowers/fixtures/film-cofinancing-agreement.md
+We act for Corvane. The board wants to know: can we get out of this deal, and can Lanternfield? One line each, plain English.

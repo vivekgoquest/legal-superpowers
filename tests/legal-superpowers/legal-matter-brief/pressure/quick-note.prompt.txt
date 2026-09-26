@@ -1,0 +1,2 @@
+tests/legal-superpowers/corpus/debt/sba-form-147-standard-loan-note.md
+Quick one: our client is the borrower on this SBA note. Anything they should push back on before signing?

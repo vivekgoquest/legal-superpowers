@@ -142,6 +142,8 @@ run_pressure_checks() {
   assert_prompt waterfall-producer-halfpage "Half a page, no jargon."
   assert_prompt waterfall-producer-finance "what this deal actually means for us"
   assert_prompt waterfall-producer-nonumbers "no numbers please"
+  assert_prompt silent-exit "can we get out of this deal"
+  assert_prompt silent-assignment "hand this work to a subcontractor"
   [ "$(head -n 1 "$PRESSURE_DIR/fixture-pick.prompt.txt")" = "$FIXTURE" ] || fail "fixture-pick must use $FIXTURE"
   pass "legal-wittgenstein pressure prompt checks"
 }

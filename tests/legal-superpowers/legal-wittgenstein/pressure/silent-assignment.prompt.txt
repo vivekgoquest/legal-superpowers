@@ -1,0 +1,2 @@
+tests/legal-superpowers/fixtures/generic-service-agreement.md
+Explain to Northstar's ops team, in plain words, whether Harbor can hand this work to a subcontractor or sell the contract to someone else.
