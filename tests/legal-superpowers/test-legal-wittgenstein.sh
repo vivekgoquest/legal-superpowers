@@ -121,14 +121,15 @@ assert_prompt() {
   local key="$1" request="$2" file="$PRESSURE_DIR/$1.prompt.txt" doc
   assert_file "$file"
   doc="$(head -n 1 "$file")"
-  [ -f "$doc" ] || fail "$file: first line is not a document in the repo: $doc"
+  # A corpus file kept local for licence reasons (.gitignore) is absent from a clean clone.
+  [ -f "$doc" ] || git check-ignore -q "$doc" || fail "$file: first line is not a document in the repo: $doc"
   tail -n +2 "$file" | grep -Fq -- "$request" || fail "$file does not contain request: $request"
 }
 
 run_pressure_checks() {
   local f
   for f in "$PRESSURE_DIR"/*.prompt.txt; do
-    [ -f "$(head -n 1 "$f")" ] || fail "$f: first line must be a document path"
+    [ -f "$(head -n 1 "$f")" ] || git check-ignore -q "$(head -n 1 "$f")" || fail "$f: first line must be a document path"
   done
   assert_prompt nvca-voting-default "Give me the Wittgenstein version of this agreement."
   assert_prompt sba-note-borrower "Put this loan note into simple language for the borrower, who is not a lawyer."
