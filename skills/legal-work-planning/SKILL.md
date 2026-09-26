@@ -28,7 +28,7 @@ NO TASK WITHOUT AN OWNER, THE TESTS IT MUST MAKE PASS, AND WHAT DONE MEANS
 4. **Map the mechanisms.** Group clauses that implement one allocation into one task, across headings and documents: a termination right with its notice, cure, survival, and payment on exit; ownership with the payment that triggers it and any license back. Split only where a reviewer could reject one task and accept its neighbor.
 5. **Seed the tests.** Write the objective cards the brief already fixes (they restate the brief, so no craft judgment is taken) into the test table (`legal-test-driven-work`), in the Wittgenstein version's clarified terms, and cite their IDs in the plan. Each seeded card carries its owning craft's ID prefix; in its task's first step that craft may amend the scenario, and adds the law and their-reading cards. The plan never restates a card or a result.
 6. **Order the tasks** (below) and write each one in the task shape.
-7. **Self-review**, then a **fresh-context plan review** with [plan-reviewer-prompt.md](plan-reviewer-prompt.md). The planner never approves its own plan. Fix every issue found and re-review the changed tasks.
+7. **Self-review**, then a **fresh-context plan review** with [plan-reviewer-prompt.md](plan-reviewer-prompt.md). The planner never approves its own plan. No subagent tool, or the dispatch failed: run the review as `requesting-legal-review` (When the Setup Falls Short) sets out and carry on; a failed dispatch never ends the work. Fix every issue found and re-review the changed tasks.
 8. **Save** the plan with the matter's record, beside the brief and the test table, or where the user says. **Present it and stop** until the user agrees or corrects it, unless they told you to proceed. Then hand off.
 
 ## Order

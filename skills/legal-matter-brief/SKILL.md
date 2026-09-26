@@ -47,7 +47,7 @@ When in doubt, write the full brief. The ratchet is one-way: if a "settled" edit
 
 **Delivery order.** The record (the brief, one line per field, heading the test table and its verdict line) is always built in full and kept in its own file. The reply is written for the reader the user names, or for the user, in the form and length they asked for; unasked, it is shorter than the document it covers, not counting a deliverable's own text. Plain words, as `legal-wittgenstein` (Accuracy) sets out: sentences under about 25 words, and each term of art kept explained once. In this order:
 
-1. The verdict: the verdict line's answer (`legal-test-driven-work`, Readiness Verdicts) in plain words, what it rests on (defects in the text, or items the file lacks), and whether an independent run has checked it; then the points that decide it, most serious first. Counts and labels stay in the record.
+1. The answer: first to the question the user asked, in plain words (asked what to push back on, the push-back points); then the verdict line's answer (`legal-test-driven-work`, Readiness Verdicts), what it rests on (defects in the text, or items the file lacks), and whether an independent run has checked it; then the points that decide it, most serious first. Counts and labels stay in the record.
 2. The clock: each Clock line cutoff still running, in plain words (omit when none runs).
 3. The ask: each document, fact, client decision and bracketed value an open row waits on, and each assumption the answer rests on, one line each (omit when there is none).
 4. The deliverable. A redline or markup opens with its list of changes, one line each with its reason, before the full wording.
