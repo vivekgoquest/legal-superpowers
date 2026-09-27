@@ -1,5 +1,14 @@
 # Legal Superpowers
 
+> [!IMPORTANT]
+> **What this system produces is advice to you: not a decision, and not a lawyer's judgement. It does legal tasks; it does not do a lawyer's job. You decide what to keep.**
+>
+> - **Advisory means every output is a proposal.** A redline is a suggested markup until you accept it. "Ready: Yes" means every test passed and the second reviewer agreed; it does not mean "sign it". You choose which recommendations to keep, change or drop, and dropping one is a normal result.
+> - **Its job is to widen your coverage.** It asks more "what if" questions and checks more clauses than one person usually can in the time. It shows what each point rests on, so you decide with more in view.
+> - **It does not replace a qualified lawyer.** A lawyer's job is law and people together. It means knowing what each side wants and fears, and what they are likely to do. It means knowing where the limits are, and finding the solution that serves the client within the law. About your matter, this system knows only the documents and facts you give it. It is an AI system. It has not met your client or the other side, and it has yet to learn people the way an experienced lawyer has.
+>
+> For example, it can tell you whether the contract lets your client end it when the provider delivers 10 days late. Whether your client *should* end it, threaten to, or use the delay to win a lower fee is a different question. It depends on the people: how much your client needs this provider, what the provider stands to lose, and how each will react. That judgement is yours or your lawyer's; this system does not make it.
+
 **Legal Superpowers makes an AI assistant do legal work the way a careful supervising lawyer would insist on.** It takes a proper brief, writes down what the document must achieve before it drafts anything, has a second reviewer check every point, and shows you exactly what each answer rests on.
 
 AI assistants can review and draft in minutes. They can also sound certain while missing a clause, inventing a case, or approving their own work. This package keeps the speed and removes those habits.
@@ -136,7 +145,7 @@ An illustration, based on the sample agreement (shortened):
 - **It is slower than a chat answer.** It does every step, including the second review and often several specialists. A one-page loan note took about 20 minutes in our tests; a long agreement can take hours. Asking for a "quick one" shortens the answer, not the checking.
 - **It checks law only against official and free public sources.** It uses no paid databases. Where it cannot verify a point, that point stays open and marked.
 - **It is only as complete as the documents you give it.** A referenced agreement you did not supply is treated as missing, and the answer says it depends on it.
-- **It adds no "this is not legal advice" disclaimers.** It is built for legal professionals and gives direct answers, and you remain responsible for the advice you give.
+- **Replies carry no disclaimers.** The caution at the top of this page is given there once and not repeated in each reply. Replies are written for legal professionals and give direct answers, and you remain responsible for the advice you give.
 
 ---
 
