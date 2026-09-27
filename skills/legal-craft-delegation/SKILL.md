@@ -1,6 +1,6 @@
 ---
 name: legal-craft-delegation
-description: Use when legal work on a document, deal, or dispute calls for substantive judgment (reviewing, drafting, redlining, negotiating, researching, or taking a position) and it is not yet settled who owns each decision; when deciding which specialists, experts, or subagents a matter needs; when asked to staff, brief, or coordinate a team of reviewers; when told to use one generalist, fewer specialists, or no specialists to save time or cost, or to staff only for the clauses or topics the document mentions; when a clause, a missing topic, or a fact falls outside the current reviewer's expertise, including non-legal fields such as tax, accounting, engineering, or insurance; or when contributions from several specialists conflict or need assembling into one result.
+description: Decides which specialist crafts (tax, data protection, finance, IP and others) a legal document needs and gives each its own decisions. Use when legal work needs more than general contract skill; when asked to staff, bring in or coordinate specialists; or when told one generalist or fewer specialists will do.
 ---
 
 # Legal Craft Delegation

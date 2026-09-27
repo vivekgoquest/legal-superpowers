@@ -1,6 +1,6 @@
 ---
 name: legal-test-driven-work
-description: Use when drafting, revising, reviewing, or redlining a contract, clause, or other legal document; when responding to the other side's markup or negotiating a term; when building, testing, or attacking a legal argument or position against a rule; when asked whether a document or clause works for a party, is acceptable, or is ready to sign; or when asked to fix, tighten, or rewrite a clause, including when told to skip the analysis and just give the text.
+description: Makes legal drafting, review and redlining test-first, against the law, the client's objective and the other side's reading. Use when drafting, revising, reviewing or redlining a contract, clause or legal argument; when asked whether a document is ready or acceptable; or when told to skip the tests or write them afterwards.
 ---
 
 # Legal Test-Driven Work

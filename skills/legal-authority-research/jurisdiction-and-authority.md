@@ -1,5 +1,7 @@
 # Jurisdiction and Authority
 
+Contents: jurisdiction pinpoint; status; pinpointing questions; multi-jurisdiction lanes; authority map; positive-law checks; precedent coding table; case-law checks; contrary and edge-case search.
+
 Reference for steps 2 to 4 of `legal-authority-research`. Its purpose is to prevent correct research in the wrong body of law.
 
 ## Jurisdiction pinpoint

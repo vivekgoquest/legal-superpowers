@@ -34,8 +34,8 @@ for dir in $expected; do
   fm="$(awk 'NR==1{next} /^---$/{exit} {print}' "$f")"
   grep -qx "name: $dir" <<<"$fm" || fail "$f frontmatter name is not $dir"
   desc="$(sed -n 's/^description: //p' <<<"$fm")"
-  [[ "$desc" == "Use when"* ]] || fail "$f description does not start with 'Use when'"
-  [ "${#desc}" -le 1024 ] || fail "$f description is ${#desc} characters (max 1024)"
+  [[ "$desc" == *"Use when "* ]] || fail "$f description has no 'Use when' triggers"
+  [ "${#desc}" -le 400 ] || fail "$f description is ${#desc} characters (max 400; harnesses share a small budget)"
   ls "tests/legal-superpowers/$dir/pressure/"*.prompt.txt >/dev/null 2>&1 || fail "no pressure prompts for $dir"
 done
 pass "frontmatter, descriptions and pressure prompts"

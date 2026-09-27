@@ -1,6 +1,6 @@
 ---
 name: requesting-legal-review
-description: Use when drafted, redlined, or revised legal text, a document review, a readiness verdict, or a legal argument is about to be delivered, sent to the other side, signed, filed, or relied on; when a craft or plan task has finished drafting or fixing legal text; when a test table holds a Pass labeled drafter, provisional, or self-run; when the drafter, a craft, a colleague, or the user says the work is already checked and fine; when asked for an independent, second-opinion, fresh-eyes, or opposing-counsel read; when told to get it reviewed quickly, to have the reviewer just confirm a green table, or to recheck only the changed rows; when text has changed since an earlier review; or when no subagent is available and rereading your own draft seems enough.
+description: Has a fresh reviewer, who drafted none of it, rerun every test as the other side would read the text. Use when drafted, redlined or reviewed legal work needs an independent check before it is sent, relied on or called done, or when told a self-check is enough.
 ---
 
 # Requesting Legal Review

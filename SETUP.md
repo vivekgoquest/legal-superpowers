@@ -5,7 +5,7 @@ This page is for whoever installs the package: an IT colleague, or a lawyer comf
 ## What it technically is
 
 - An **AI agent** is an AI model that can use tools: read and write files, run commands, search the web. Claude Code, Codex and pi are programs that run agents on your computer; each is called a **harness**.
-- A **skill** is a folder containing a `SKILL.md` file of plain-English instructions. The first lines of each file are a **description** starting "Use when…". The agent reads every description and opens a skill when a request matches it, so users never name skills.
+- A **skill** is a folder containing a `SKILL.md` file of plain-English instructions. The first lines of each file are a short **description**: what the skill does, then "Use when…" and the situations that call for it. The agent reads every description and opens a skill when a request matches it, so users never name skills.
 - A **subagent** is a second agent started for one job with a fresh memory. The package uses subagents for specialists and for the independent reviewer.
 - This package is 12 skills in `skills/`. It has no hooks, plug-in code or server; it works in any harness that reads skill folders.
 
@@ -16,7 +16,7 @@ This page is for whoever installs the package: an IT colleague, or a lawyer comf
 | Tool | Personal skills folder it uses |
 |---|---|
 | Claude Code | `~/.claude/skills/` |
-| Codex | `~/.codex/skills/` |
+| Codex | `~/.agents/skills/` |
 | pi | `~/.pi/agent/skills/` (or `~/.agents/skills/`) |
 | Other tools | their own skills folder, or `~/.agents/skills/` |
 
@@ -26,8 +26,8 @@ This page is for whoever installs the package: an IT colleague, or a lawyer comf
 
 ```bash
 git clone https://github.com/vivekgoquest/legal-superpowers.git ~/legal-superpowers
-mkdir -p ~/.codex/skills   # or the tool's folder from the table above
-for d in ~/legal-superpowers/skills/*/; do ln -s "$d" ~/.codex/skills/; done
+mkdir -p ~/.agents/skills   # or the tool's folder from the table above
+for d in ~/legal-superpowers/skills/*/; do ln -s "$d" ~/.agents/skills/; done
 ```
 
 **claude.ai and ChatGPT downloads:** `scripts/package-skills.sh` builds them into `dist/` (one ZIP per skill for claude.ai, flat renamed files plus project instructions for ChatGPT). `.github/workflows/skill-bundles.yml` reruns it on every change to `skills/` and republishes the [`skills` release](https://github.com/vivekgoquest/legal-superpowers/releases/tag/skills), so the README's download links always serve the current skills.

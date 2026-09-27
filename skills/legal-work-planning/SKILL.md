@@ -1,6 +1,6 @@
 ---
 name: legal-work-planning
-description: Use when a matter brief calls for legal work with more than one step, such as several clauses, issues, or documents, more than one craft, research or a client decision that must come before drafting, or a negotiation over several points; when asked to plan, sequence, scope, stage, or map out a review, redline, renegotiation, drafting project, diligence exercise, or legal argument; when asked for a work plan, action list, or negotiation plan for a legal matter; when told to skip the plan, go straight to drafting, split the work into parallel workstreams by section, or leave a decision such as governing law until the end; or when a plan already exists and a new fact, document, client decision, or review result changes the work.
+description: Turns an agreed matter brief into a short, reviewed plan of test-linked tasks. Use when legal work has several steps, clauses, documents, crafts or client decisions; when asked to plan, scope or sequence a review, redline, renegotiation or argument; or when told to skip the plan.
 ---
 
 # Legal Work Planning

@@ -1,6 +1,6 @@
 ---
 name: receiving-legal-review
-description: Use when comments, a markup, a redline, an issues list, or review results come back on a legal document, clause, or argument, from an independent reviewer, the other side, a colleague or supervising lawyer, or the client; before accepting, rejecting, countering, or making a change a comment asks for; when told to accept all comments, take their changes, reject everything the other side sent, or overrule a reviewer; when a comment says a clause is unenforceable, void, a penalty, illegal, required by law, or market standard, or cites a case or statute; when the drafter disputes a reviewer's failing row; when a partner or the client says to just make a change; or when a comment is unclear, names no failing scenario, conflicts with the client's instructions, or asks the client to concede a position.
+description: Turns each review comment into a test and checks it against the text before acting on it. Use when comments, a markup, a redline or review results come back from a reviewer, the other side, a colleague or the client, or when told to accept or reject them all.
 ---
 
 # Receiving Legal Review

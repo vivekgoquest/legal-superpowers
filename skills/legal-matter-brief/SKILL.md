@@ -1,6 +1,6 @@
 ---
 name: legal-matter-brief
-description: Use when starting any work on a legal matter or legal document, such as drafting, reviewing, summarizing, redlining, marking up, negotiating, comparing, answering a legal research question, or building a legal argument; when a document arrives with a bare instruction like "review this" or "redline this"; when the represented party, objective, governing law, relevant date, or deliverable has not been stated; when the user says to skip questions, just do it, or keep it quick; when a request is framed as a small or wording-only edit; when the user describes a missing exhibit, signature page, or other document instead of supplying it; or when a new fact, document, party, or instruction arrives in a matter already under way.
+description: Records whose side we are on, the objective, the facts, the documents, the relevant date and the governing law before any legal work starts. Use when starting any legal matter or any review, redline, drafting, research, negotiation or argument on a legal document; when new facts or documents arrive; or when told to skip the questions and just start.
 ---
 
 # Legal Matter Brief

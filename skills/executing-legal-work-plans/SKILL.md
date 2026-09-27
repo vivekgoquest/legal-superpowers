@@ -1,6 +1,6 @@
 ---
 name: executing-legal-work-plans
-description: Use when an approved or agreed plan for legal work is to be carried out, such as a drafting, review, redline, negotiation, research, or argument plan with numbered tasks, including a plan pasted into the message; when told to execute, run, work through, or finish a legal work plan, or to deliver the finished clauses or document from one; when resuming a partly executed legal plan in a new session or after a checkpoint; when a task in a legal plan waits on a client decision, fact, document, or authority that has not been supplied; when a plan says a task's test must pass; when told the plan is approved, so do not question it, ask anything, stop, or report until the end; or when told the tasks are small wording edits, so the tests, batch reports, or final review can be skipped.
+description: Carries out an approved legal work plan task by task and stops at decisions only the client can make. Use when an approved or agreed plan for legal work is to be carried out, resumed or continued, or when told to run it without stopping or asking questions.
 ---
 
 # Executing Legal Work Plans

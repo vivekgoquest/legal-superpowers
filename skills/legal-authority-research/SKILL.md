@@ -1,6 +1,6 @@
 ---
 name: legal-authority-research
-description: Use when a legal test, clause position, or answer depends on what the law is or how courts have applied it, including governing or controlling law, statutes, regulations, leading cases, precedent, enforceability, or whether a rule applies in a jurisdiction on a date; when a citation or authority needs checking, or someone asks whether a case or statute is still current or good law; when someone asks you to assume a jurisdiction's law, cite cases from memory, or treat a blog, summary, or unopened citation as authority; or when a search for law could expose confidential matter facts.
+description: Pinpoints which law governs and verifies statutes, cases and their currentness from official and free public sources. Use when a legal test, clause position or answer depends on the law; when asked for the controlling law, the leading cases or whether a rule still applies; or when told to assume a jurisdiction or skip checking sources.
 ---
 
 # Legal Authority Research

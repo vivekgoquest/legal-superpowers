@@ -1,6 +1,6 @@
 ---
 name: legal-issue-tracing
-description: Use when a legal test fails and no one can say exactly why; when a fix, redraft, or added wording did not turn a failing test to Pass; when asked to add stronger wording, try another version, or keep redrafting until a test passes; when a test passes or fails unexpectedly, or a result cannot be explained from the text; when a finding, review comment, or conclusion has no clause, fact, or authority behind it; when clauses, definitions, schedules, exhibits, or documents conflict and nothing in the text settles which prevails; when someone says a failing test must be wrong and should be changed; or when each fix makes another test fail.
+description: Finds the root cause of a failing legal test before any text is changed. Use when a legal test fails and no one can say exactly why; when a fix, redraft or added wording did not turn it to Pass; or when asked to add stronger wording or try another version.
 ---
 
 # Legal Issue Tracing

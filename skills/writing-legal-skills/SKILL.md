@@ -1,6 +1,6 @@
 ---
 name: writing-legal-skills
-description: Use when creating a new skill for legal work or changing an existing one, including its description, rules, examples, or supporting files; when a skill gave a wrong, weak, hedged, or invented result on a matter, or did not fire when it should have; when writing or editing pressure prompts, or evaluating skills on fixture or corpus agreements; when deciding whether a skill works or can be relied on; when asked for a new skill covering one legal field, clause type, or document type; or when told to skip testing, just write the SKILL.md, make a quick wording tweak without rerunning, grade the runs yourself, skip the judges or the corpus, or write several skills at once.
+description: Develops and changes the package's own legal skills test-first. Use when creating or changing a legal skill, its description or its supporting files; when a skill gave a wrong, weak or invented result or did not fire; or when told to skip testing, skip the judges or self-grade the runs.
 ---
 
 # Writing Legal Skills
@@ -80,7 +80,7 @@ No nuance clauses ("don't X unless it matters"); they reopen the negotiation. A 
 
 Check every skill against these before the rerun:
 
-- **Frontmatter:** `name` matches the folder. `description` starts "Use when" and lists only triggering situations (the tasks in the words lawyers use, the symptoms, the words users type when pushing past the discipline), never the workflow, in at most 1024 characters. There are no hooks or routers: the description alone makes the skill fire. A description that summarizes the workflow gets followed instead of the skill.
+- **Frontmatter:** `name` matches the folder. `description`, in the third person: one short clause on what the skill does (its outcome, never its steps), then "Use when" and the triggering situations, most common first (the tasks in the words lawyers use, the symptoms, the words users type when pushing past the discipline), in at most 400 characters. Harnesses share a small budget across every installed skill's description and cut long ones from the end. There are no hooks or routers: the description alone makes the skill fire. A description that summarizes the workflow gets followed instead of the skill.
 - **Names and vocabulary:** other skills by exact name, in backticks, no namespace prefix, and only skills that exist in the package. The package's words, never a synonym: test card, test table, craft, craft brief, Wittgenstein version, Pass, Fail, Partial, Blocked, open Pass, run label, Not supplied, Clock line.
 - **One record:** the test table is the matter's record. No skill creates a separate issues list, ledger, memo, or packet.
 - **Wittgenstein version:** every skill that works on a document delivers one for the final text, through `legal-wittgenstein`.

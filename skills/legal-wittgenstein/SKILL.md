@@ -1,6 +1,6 @@
 ---
 name: legal-wittgenstein
-description: Use when anyone works on, reads, explains, simplifies, or summarises a legal document (contract, term sheet, form, loan note, licence, lease, policy, statute, regulation, judgment, pleading), or rewrites one into plain language; when asked for the Wittgenstein version, the gist, the core, a plain-English or simple-language version, or a one-page or five-minute summary; when the reader is a client, a business team, or anyone who is not a lawyer; when a matter brief, test, review, or final deliverable needs a Wittgenstein version; when a defined term or open word such as "reasonable", "promptly", or "material" seems to carry the outcome or shift meaning between clauses; or when asked for the one true definition of a term in a legal text.
+description: Distills a legal document into a short plain-language version of its core, and pins down what its key words mean in use. Use when anyone works on, reads, explains, simplifies, summarises or rewrites a legal document; when asked for the gist, a plain-English or Wittgenstein version; or when a word such as "material" or "reasonable" carries the outcome.
 ---
 
 # Legal Wittgenstein

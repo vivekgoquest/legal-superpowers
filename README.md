@@ -162,7 +162,7 @@ Install the Legal Superpowers skills for me. Change nothing else on my computer.
    Otherwise run: git clone https://github.com/vivekgoquest/legal-superpowers.git ~/legal-superpowers
    If that fails, stop and tell me why in plain words.
 2. Work out which AI tool you are running in, and use its personal skills folder:
-   Claude Code: ~/.claude/skills. Codex: ~/.codex/skills. pi: ~/.pi/agent/skills.
+   Claude Code: ~/.claude/skills. Codex: ~/.agents/skills. pi: ~/.pi/agent/skills.
    Any other tool: the folder where it loads personal skills (folders that contain a SKILL.md); if it has none, use ~/.agents/skills and tell me.
 3. Create that folder if it does not exist. For each folder inside ~/legal-superpowers/skills/, create a symbolic link with the same name in the skills folder, pointing to it (on Windows, copy the folder instead, replacing any earlier copy from this package). If something with that name is already there and did not come from this package, leave it alone and tell me.
 4. Check the result: run bash ~/legal-superpowers/tests/legal-superpowers/test-skills.sh and confirm that all 12 skills are in the skills folder, each with a SKILL.md.

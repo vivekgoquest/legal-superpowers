@@ -36,12 +36,12 @@ assert_not_contains_ci() {
 run_skill_checks() {
   assert_file "$SKILL"
 
-  # Frontmatter: name matches folder; description is "Use when" triggers, <= 1024 chars.
+  # Frontmatter: name matches folder; description says what, then "Use when" triggers, <= 400 chars.
   assert_contains "$SKILL" "name: legal-wittgenstein"
   local desc
   desc="$(grep -m1 '^description: ' "$SKILL" | sed 's/^description: //')"
-  [[ "$desc" == "Use when "* ]] || fail "description must start with 'Use when'"
-  [ "${#desc}" -le 1024 ] || fail "description is ${#desc} chars; limit is 1024"
+  [[ "$desc" == *"Use when "* ]] || fail "description must contain 'Use when' triggers"
+  [ "${#desc}" -le 400 ] || fail "description is ${#desc} chars; limit is 400"
   for trigger in "works on" "reads" "explains" "simplifies" "summarises" "rewrites" "Wittgenstein version"; do
     [[ "$desc" == *"$trigger"* ]] || fail "description lacks trigger: $trigger"
   done

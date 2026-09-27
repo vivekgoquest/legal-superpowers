@@ -1,6 +1,6 @@
 ---
 name: legal-verification-before-completion
-description: Use when about to say or imply, in any words, that legal work is done, fixed, resolved, complete, final, all green, in good shape, acceptable, or ready to sign, file, send, or rely on; when asked to write a final summary, closing report, cover note, status update, or sign-off for a review, draft, redline, negotiation, research answer, or argument; when the user declares a matter finished and asks you to confirm it or write it up; when a craft, subagent, or reviewer reports its work done or its tests passing; when about to deliver or hand over legal work product, send it to a client or the other side, or mark a plan task complete; when the text changed after the last test run, even by a tidy-up or renumbering; or when told there is no time or no need to rerun the tests.
+description: Reruns every test on the final text before any claim that legal work is done, fixed or ready. Use when about to say or imply that legal work is done, final or ready to sign, send or rely on; when writing a final summary, sign-off or status update; or when told there is no time to recheck.
 ---
 
 # Legal Verification Before Completion
