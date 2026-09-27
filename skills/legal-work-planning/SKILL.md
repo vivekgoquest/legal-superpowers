@@ -16,7 +16,7 @@ NO MULTI-STEP LEGAL WORK STARTS WITHOUT A WRITTEN PLAN THAT PASSED REVIEW
 NO TASK WITHOUT AN OWNER, THE TESTS IT MUST MAKE PASS, AND WHAT DONE MEANS
 ```
 
-**When not to plan.** A settled edit, or one mechanism with one craft and nothing it waits on, goes straight to `legal-test-driven-work`. A plan is never longer than the work it controls. A small matter gets a short plan, not tasks with fewer fields.
+**When not to plan.** A settled edit, or one mechanism with one craft and nothing it waits on, goes straight to `legal-test-driven-work`. A small matter gets fewer tasks, not tasks with fewer fields.
 
 ## Process
 
@@ -101,7 +101,7 @@ Plan failures; never write them:
 
 ## Handoff
 
-**When told to skip the plan or its review,** write the plan anyway, as short as the work allows, in the same reply. Start only what needs no plan (the Wittgenstein version, the Clocks, the gate questions) while the fresh-context review runs. Drafting starts when the review passes, without waiting for the user's approval. Speed changes the plan's length, never whether it exists. A decision the user defers ("governing law at the end") becomes a gate: say in one line which cards wait on it, and plan the work that does not.
+**When told to skip the plan or its review,** write the plan anyway, in the same reply. Start only what needs no plan (the Wittgenstein version, the Clocks, the gate questions) while the fresh-context review runs. Drafting starts when the review passes, without waiting for the user's approval. Speed never removes the plan. A decision the user defers ("governing law at the end") becomes a gate: say in one line which cards wait on it, and plan the work that does not.
 
 **When the work changes** (a new fact, document, client decision, or review result), update the brief, then the affected tasks and their order, then rerun the affected cards. Never deviate from the plan silently.
 

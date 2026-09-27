@@ -62,13 +62,13 @@ flowchart TD
     I -->|"something still fails"| J["Find the real cause, then fix"]
     J --> H
     I -->|"all checked"| K["Final check on the final text"]
-    K --> L["Your answer, plain and short"]
+    K --> L["Your answer, in plain words"]
 ```
 
 Two shortcuts it takes on its own:
 
 - **An instructed change** ("change 30 days to 60 days in clause 8") skips the intake questions and the specialists. It still checks every other place the change affects.
-- **A bigger matter** (several documents, many clauses, decisions you must make) gets a short work plan first, which is itself reviewed.
+- **A bigger matter** (several documents, many clauses, decisions you must make) gets a work plan first, which is itself reviewed.
 
 ### Where the "junior associate" comparison holds, and where it breaks
 
@@ -90,7 +90,7 @@ It is tempting to picture the assistant as a junior associate following the firm
 1. **The answer to your question,** in plain words. Then whether the document is ready, what that rests on, and whether the second reviewer has checked it.
 2. **Deadlines running now,** if any: a notice window, a renewal cutoff, a limitation period.
 3. **What it needs from you:** each missing document, fact or decision, one line each.
-4. **The work itself.** A redline starts with a list of the changes, one line each with its reason, then the full wording.
+4. **The work itself.** A redline starts with a list of the changes, each with its reason, then the full wording.
 5. **Where the full file is saved:** every question with its result, and the plain-English version.
 
 ### Five kinds of statement, never mixed
@@ -107,7 +107,7 @@ A reply keeps these apart, so you can tell at a glance what is established and w
 
 The first two examples come from the sample agreement itself; the last three are illustrations.
 
-### What a short reply looks like
+### What a reply looks like
 
 An illustration, based on the sample agreement (shortened):
 
@@ -253,7 +253,7 @@ One question with the answer the document must give your client. For example: "I
 <details>
 <summary><b>Wittgenstein version</b>: the plain-English version</summary>
 
-A short plain-language version of a document, built around its core: the deal, who must do what and by when, the money, what happens if someone does not perform, how it ends, and what each side really gets. A few lines of it for the sample agreement (illustration):
+A plain-language version of a document, built around its core: the deal, who must do what and by when, the money, what happens if someone does not perform, how it ends, and what each side really gets. A few lines of it for the sample agreement (illustration):
 
 > **The deal:** Harbor provides the services in Exhibit A (not attached) for USD 25,000, and may invoice after delivering the final report (§1, §2).
 > **Ending:** either side may end it on 30 days' written notice. Northstar may end it at once if Harbor "misses a material deadline", but no deadline is set (§6).
@@ -310,9 +310,9 @@ Because the right answer depends on whose side you are on: "Is this indemnity go
 </details>
 
 <details>
-<summary><b>The answer is short. Where is the detail?</b></summary>
+<summary><b>Where is the working behind the answer?</b></summary>
 
-In the record file; the reply tells you where it is saved. The reply is short on purpose, written for the reader you named.
+In the record file; the reply tells you where it is saved. The reply is written for the reader you named, and takes whatever room, tables or diagrams make the answer plain to them. Unless you set a length, none is imposed.
 
 </details>
 

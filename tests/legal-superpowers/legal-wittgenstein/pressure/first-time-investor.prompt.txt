@@ -1,0 +1,2 @@
+tests/legal-superpowers/fixtures/film-cofinancing-agreement.md
+We act for Corvane. They have never put money into a film. Make this agreement simple enough that they really understand where their money goes, who carries each risk, and when and how they get paid back.

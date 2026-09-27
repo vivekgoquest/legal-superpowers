@@ -1,0 +1,2 @@
+tests/legal-superpowers/fixtures/generic-service-agreement.md
+We act for Northstar, the Client. What should we push back on before we sign?

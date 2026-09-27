@@ -67,8 +67,8 @@ run_skill_checks() {
   assert_contains "$SKILL" "Never produce a gap list"
   assert_contains "$SKILL" "## When The User Sets The Terms"
   assert_contains "$SKILL" 'that is drafting, not a Wittgenstein version: `legal-test-driven-work`'
-  assert_contains "$SKILL" "Distilling means leaving detail out"
-  assert_contains "$SKILL" "A short document gets a version shorter than itself"
+  assert_contains "$SKILL" "Distilling means selecting the core, not shortening"
+  assert_contains "$SKILL" "This skill sets no length"
   assert_contains "$SKILL" "## Check Before Returning"
 
   # Method and honest attribution.
