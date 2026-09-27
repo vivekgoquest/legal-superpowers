@@ -180,10 +180,10 @@ Install the Legal Superpowers skills for me. Change nothing else on my computer.
 
 ### Use it in claude.ai
 
-1. In claude.ai, open **Settings → Capabilities** and turn on **Code execution and file creation**.
+1. In claude.ai, open **Settings → Capabilities** and turn on **Cloud code execution and file creation**.
 2. Download [**legal-superpowers-for-claude-ai.zip**](https://github.com/vivekgoquest/legal-superpowers/releases/download/skills/legal-superpowers-for-claude-ai.zip) and double-click it. You get 12 smaller ZIP files, one per skill.
-3. In claude.ai, open **Customize → Skills** and upload each of the 12 ZIP files. claude.ai takes one skill per ZIP file.
-4. Start a new chat, attach your document, and ask in the usual way.
+3. In claude.ai, open **Customize → Skills**, choose **Add → Upload skill**, select all 12 ZIP files together, and press **Upload 12 skills**.
+4. Start a new chat, attach your document, and ask in the usual way. To check it works, ask for a plain-English version of an agreement: the reply shows "Loaded legal-wittgenstein skill".
 
 On a Team or Enterprise plan, an owner must first turn on code execution and skills in **Organization settings → Plugins & skills**, and can add the skills for everyone in the organisation. Source: [Anthropic, "Using skills in Claude"](https://support.claude.com/en/articles/12512180-using-skills-in-claude).
 
