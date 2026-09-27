@@ -59,7 +59,7 @@ run_skill_checks() {
   assert_contains "$SKILL" "never clause by clause"
   assert_contains "$SKILL" "**What each side really gets:**"
   assert_contains "$SKILL" "**The economics:**"
-  assert_contains "$SKILL" "except in a payment order"
+  assert_contains "$SKILL" "a payment order keeps every step"
   assert_contains "$SKILL" "## Very Long Documents"
   assert_contains "$SKILL" "compose the core page first"
   assert_contains "$SKILL" "## Output"

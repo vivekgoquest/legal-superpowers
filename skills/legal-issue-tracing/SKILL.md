@@ -47,7 +47,7 @@ Start at the clause that decides the scenario and ask of each link, "what does t
 6. **The law behind it.** The governing law the documents actually state, and whether the rule the row relies on is verified and current.
 7. **The test itself.** Its source, and whether its expected result comes from the client's objective, verified law, or a real hostile reading.
 
-Write the chain in one line: scenario → deciding text → what it depends on → the break → consequence. Quote or cite every link. Never fill a link with what the document "must" say, general knowledge, or "market practice". "Cannot trace" is a result only with every link checked listed; most untraceable failures are incomplete traces.
+Write the chain: scenario → deciding text → what it depends on → the break → consequence. Quote or cite every link. Never fill a link with what the document "must" say, general knowledge, or "market practice". "Cannot trace" is a result only with every link checked listed; most untraceable failures are incomplete traces.
 
 Compare with something in the file that passes a similar test, or the same mechanism in another supplied document. List every difference, however small, and claim for the comparison only what its text shows.
 

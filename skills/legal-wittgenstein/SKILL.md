@@ -20,7 +20,7 @@ Organise the version around the core, never clause by clause:
 - **The economics:** amounts, when payable, and what triggers payment. Where money is pooled, lent, recouped, or shared, also: who puts in what; who carries each loss (overruns, shortfalls, a default); the order money comes back, each step with its amount, cap, or percentage; what must be recovered before each party earns anything; and what each ends up with. A figure the document's numbers fix but do not state may be worked out, labelled "(derived)".
 - **If they don't:** what counts as default or breach, and what the other side can then do.
 - **Ending and exits:** term, termination rights, walk-away or transfer rights, what the text says survives.
-- **What each side really gets:** after the conditions, caps, and carve-outs, one line per party, in money terms wherever money moves.
+- **What each side really gets:** after the conditions, caps, and carve-outs, for each party, in money terms wherever money moves.
 
 Use only the headings the document engages; a voting agreement may have no economics line. Boilerplate appears only where it changes a core point.
 
@@ -31,9 +31,9 @@ Steps 2 to 5 are working steps. The output shows their results, not the working.
 1. **Read it all and map it.** Parties by the document's own names. What is attached, and what is referred to but missing: exhibits, schedules, blanks, bracketed options, terms left to later agreement, an order form or a cover page.
 2. **Find the words that carry the deal.** Defined terms and open words the core turns on: what triggers payment, default, consent, a condition, an exit. Skip definitions that change no core point.
 3. **Look at the uses.** Read every operative clause that uses the word. What does it do there: start a clock, trigger a right, set a threshold, name who decides? Start from those uses, not from a dictionary or the definition's label. Watch for pictures. (Illustration: a lease clause headed "Exclusive use" suggests no competing tenant anywhere, while its words bar one named trade in one wing.)
-4. **Apply it.** Run one or two concrete situations built from the document's own mechanisms, and label any invented fact as an illustration. Say in plain words what happens. If every situation comes out the same, the word is clear: use it plainly and move on.
+4. **Apply it.** Run concrete situations, as many as it takes to show what the word does, built from the document's own mechanisms, and label any invented fact as an illustration. Say in plain words what happens. If every situation comes out the same, the word is clear: use it plainly and move on.
 5. **Flag a split only when it is real.** Each reading needs positive support in the words of the text, and one situation must come out differently under them. A reading that gives an operative word no effect, or that rests only on the absence of a contrary clause, is not a reading. Absence of text is a gap, not a reading. Never manufacture a split; most documents have none, or one or two. (Illustration: a licence defines "Affiliate" by control "at signing" in one clause and uses it for companies controlled "from time to time" in another, so a subsidiary acquired later splits the readings. If the licence never addresses timing at all, that is a gap.)
-6. **Mention a gap only where it changes a core point,** in one line. (Illustration: a price-review clause that points to an index the document never names.) Never produce a gap list.
+6. **Mention a gap only where it changes a core point.** (Illustration: a price-review clause that points to an index the document never names.) Never produce a gap list.
 7. **Write the version and check it** (below).
 
 ## Accuracy
@@ -42,7 +42,7 @@ Steps 2 to 5 are working steps. The output shows their results, not the working.
 - State timing as the document's rule in plain words. (Illustration: "an appeal must be filed within 28 days after the decision is sent.") Never turn a rule into a calendar date unless the document states that date.
 - Cite compactly (§4.2, Sch. 1) so every point traces to a clause.
 - Say only what the document provides; where it is silent (survival, ownership before payment, a remedy), say it is silent. What the law adds is never stated (`legal-test-driven-work`, Text, not law).
-- Plain words and short sentences are the default, whoever the reader. Distilling cuts examples and lists, never a word a line's effect turns on (a qualifier or scope word such as "only", a cap, a pro-rata share, a threshold, a knowledge standard, an exception, a forum, a bracket), and adds none the text lacks; an example never stands in for the threshold it must meet. Keep each provision's kind: a duty, a right, a condition and a trigger stay what they are ("may" sets no deadline; an event of default is a trigger, not a promise), and a power usable without a default is not filed under "If they don't". Where a plain word would change legal effect, or a line cannot hold a limit, keep the document's term and gloss it once: "indemnify (pay the other side's losses from ...)".
+- Plain words and plain sentences, one idea each, are the default, whoever the reader. Distilling may leave out the document's examples and lists, never a word a line's effect turns on (a qualifier or scope word such as "only", a cap, a pro-rata share, a threshold, a knowledge standard, an exception, a forum, a bracket), and adds none the text lacks; an example never stands in for the threshold it must meet. Keep each provision's kind: a duty, a right, a condition and a trigger stay what they are ("may" sets no deadline; an event of default is a trigger, not a promise), and a power usable without a default is not filed under "If they don't". Where a plain word would change legal effect, or a line cannot hold a limit, keep the document's term and gloss it once: "indemnify (pay the other side's losses from ...)".
 - Use the document's own party names. When the user names a side or a reader, foreground what matters to that side: what they must do, what they can lose, and what they can do. You may then address that party as "you", after saying once who "you" is. Never change what the document says in order to favour them.
 
 ## Very Long Documents
@@ -65,18 +65,18 @@ For documents too long to hold whole (roughly 50,000 words or more), distill par
   - [Party B]: [...] (§x)
 
 **Words that carry the deal** (the clarified terms)
-- "[term]" (§x, §y): [what it does, in plain words, in one concrete situation].
+- "[term]" (§x, §y): [what it does, in plain words, shown in concrete situations].
 
 **Open points** (words doing more than one job, and gaps that change a core point; omit if none)
-- [One line each.]
+- [Each in plain words.]
 ```
 
 This skill sets no length. What the reader needs in order to understand the core decides it:
 
 - Take the room plainness needs. A brief but tangled clause may need more words than it has. Where a mechanism is plainer as a table, a timeline or a diagram (a payment order, a chain of conditions, notice periods), use one, with a cite on each row or step, and add a worked example where numbers help, labelled as an illustration.
-- Leave out what does not bear on the core, never what is hard to explain. Name the kinds, not the list, except in a payment order: every step stays, with its amount, cap, or percentage (Accuracy). (Illustration: "Nine events let the landlord end the lease. The ones likely to bite are late rent and unapproved subletting (§14).")
+- Leave out what does not bear on the core, never what is hard to explain. Where a long list would bury the point, name the kinds and the items likely to matter; a payment order keeps every step, with its amount, cap, or percentage (Accuracy). (Illustration: "Nine events let the landlord end the lease. The ones likely to bite are late rent and unapproved subletting (§14).")
 - "Words that carry the deal" are the terms the core turns on, each shown through what it does. "Open points" are only those that change a core point. Where the core lines already make the key words plain, fold them in and drop any block that would only repeat them.
-- A length or reading-time limit the user sets caps everything: half a page is about 250 words, a page about 500, five minutes about 800. To meet it, cut detail, never a limit (Accuracy), and keep every core heading.
+- The Wittgenstein version itself is never cut to fit a length: its own file keeps all the room clarity needs. A length or reading-time limit the user sets applies to the reply they will read: half a page is about 250 words, a page about 500, five minutes about 800. To meet it, cut detail, never a limit (Accuracy), keep every core heading, and point to the full version.
 
 ## When The User Sets The Terms
 
@@ -84,7 +84,7 @@ The user makes the call. Do what they ask wherever the text allows.
 
 - **A clean or unambiguous rewrite of the operative text, picking the sensible reading:** that is drafting, not a Wittgenstein version: `legal-test-driven-work`.
 - **Drop the cites:** drop them, and keep every line traceable to a clause.
-- **Merge terms the document keeps apart:** merge them, and add one line on any situation where the merge changes the outcome.
+- **Merge terms the document keeps apart:** merge them, and explain any situation where the merge changes the outcome.
 - **One definition of a term:** test it first, then open with what the text does. It fixes one meaning (give it, with its cite), fixes part of one (say which part), or leaves it open (give the situation it leaves open, and say whether that is a gap or a split with text supporting each reading). Where the document does not state one, writing a definition is drafting: `legal-test-driven-work`.
 
 ## Scope and Refresh
@@ -95,5 +95,5 @@ The version is of the final text the work produces, proposed changes included an
 
 - The core page comes first, organised by the core, not clause by clause and not a gap list.
 - Each line is true of every clause it cites, with its kind and limits kept (Accuracy); nothing the document does not say, no content of a document the file lacks, no real split silently resolved, and no computed calendar date. Every "(derived)" figure is recomputed from the cited figures.
-- A non-lawyer can follow every line: short sentences, each kept term of art glossed once, each bracketed option described in words, and nothing they need to follow the core cut to save space.
+- A non-lawyer can follow every line: plain sentences, one idea each, each kept term of art glossed once, each bracketed option described in words, and nothing they need to follow the core cut to save space.
 - Splits and gaps meet steps 5 and 6; the mode the user set got what it requires; any length the user set fits; no unrequested disclaimers, preambles, closing offers, or extra sections.
